@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=2cm}
+
+\title{\textbf{Plan d'action : la preuve complète de Yang--Mills 4D avec mass gap}}
+\author{\textit{Projet “Unification de l’Alpha à l’Oméga”}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Ce document décrit un \emph{plan d’action} en cinq grandes étapes pour établir, de manière \emph{mathématiquement} rigoureuse, l’existence d’une théorie de Yang--Mills 4D (groupe de jauge compact) \textbf{et} la présence d’un \emph{mass gap} strictement positif. Il s’appuie sur les avancées et validations physiques (théorie sur lattice, asymptotic freedom, confinement observé), et vise à combler l’ultime étape : passer d’une compréhension physique à une \emph{démonstration} formelle respectant les standards de la constructivité en QFT (ou l’approche Wilson sur réseau).
+\end{abstract}
+
+\section*{1. Choisir la régularisation : Lattice (Wilson) ou multi-échelle constructive}
+
+\paragraph{Option A : Lattice (Wilson).}
+\begin{itemize}
+  \item Discrétiser l’espace-temps en un \emph{réseau} (maillage) de pas \(a\).
+  \item Définir l’action de Yang--Mills via des \emph{plaquettes} : la variable de jauge (matrice \(\mathrm{SU}(N)\)) sur chaque \emph{lien}, intégrée par la mesure de Haar.
+  \item Les \emph{Wilson loops} constituent un outil clé pour diagnostiquer la confinement et le potentiel entre charges colorées.
+\end{itemize}
+
+\paragraph{Option B : Multi-échelle constructive.}
+\begin{itemize}
+  \item Schéma de \emph{constructive QFT} : introduire un \emph{cut-off} (\(\Lambda\)), décomposer en blocs/échelles (block-spin, expansions multi-échelles).
+  \item Contrôler la \emph{renormalisation} et montrer qu’à la limite \(\Lambda\to \infty\), on obtient une théorie cohérente.
+\end{itemize}
+
+Dans l’un ou l’autre cas, on part d’un système \emph{régularisé} (fini) sur lequel on peut effectuer des estimations rigoureuses.
+
+\section*{2. Montrer la limite du pas de maille \(a\to 0\) (ou \(\Lambda\to \infty\)) : existence d’une mesure euclidienne \(\mu\)}
+
+\begin{enumerate}
+  \item \textbf{Fonction de partition et corrélations} : on définit la fonctionnelle
+  \[
+    Z(a), \quad
+    \langle\,\mathcal{O}_1\cdots\mathcal{O}_n\rangle,
+  \]
+  pour des observables \(\mathcal{O}_i\).
+  \item \textbf{Renormalisation et asymptotic freedom} : on exploite le fait que le couplage devient petit aux hautes énergies (asymptotic freedom) pour contrôler les divergences ultraviolettes.
+  \item \textbf{Convergence vers la limite continue} : montrer qu’à \(a\to 0\) (ou \(\Lambda\to\infty\)) on obtient \emph{une} mesure \(\mu_{\text{continu}}\), \emph{invariante de jauge}, définissant \textbf{rigoureusement} la théorie Yang--Mills 4D.
+\end{enumerate}
+
+\noindent
+\textbf{Conclusion} : la QFT (en formulation euclidienne) est \emph{mathématiquement} construite, non plus simple conjecture.
+
+\section*{3. Vérifier la symétrie de jauge + axiomes QFT \texorpdfstring{\(\Rightarrow\)}{} espace de Hilbert Minkowskien}
+
+\paragraph{Invariance de jauge.}
+Montrer que la mesure \(\mu_{\text{continu}}\) est bien \emph{invariante} sous transformations de jauge locales (pas de brisure anormale).
+
+\paragraph{Axiomes Osterwalder--Schrader.}
+S’assurer que la théorie euclidienne satisfait (positivité, symétrie de réflexion, etc.). On peut alors faire la Wick rotation et \emph{retrouver} une \emph{QFT Minkowskienne} dans un espace de Hilbert \(\mathcal{H}\).
+
+\paragraph{Hamiltonien.}
+Dans \(\mathcal{H}\), on identifie le Hamiltonien \(\hat{H}\). Les états “physiques” (invariants de jauge) constituent un sous-espace où agit \(\hat{H}\).
+
+\section*{4. Spectre : prouver un théorème d’exponential decay \texorpdfstring{\(\Rightarrow\)}{} mass gap \(\Delta>0\)}
+
+\begin{enumerate}
+  \item \textbf{Fonctions de corrélations} : en euclidien,
+  \[
+    \langle\,\mathcal{O}(x)\,\mathcal{O}(y)\rangle
+    \;\sim\;
+    \mathrm{e}^{-\,m\,\|x-y\|}.
+  \]
+  \item \textbf{Preuve} : via estimations (constructive, multi-échelle) ou via l’approche lattice (analyse de la décroissance). Absence de tout mode \emph{massless} \(\Rightarrow\) \(\Delta \ge m>0\).
+  \item \textbf{Conséquence} : le spectre du Hamiltonien présente un \emph{gap} non nul. Les “glueballs” sont la première excitation massive.
+\end{enumerate}
+
+\noindent
+\textbf{Idée} : Dans \(\mathrm{SU}(N)\) pur, pas de boson de Goldstone vecteur (pas de brisure de jauge). \emph{Confinement} renforce la conclusion qu’il n’existe pas de particule vecteur libre de masse nulle.
+
+\section*{5. (Optionnel) Confinement : prouver la “aire law” pour les Wilson loops}
+
+\begin{itemize}
+  \item \textbf{Wilson loops} \(\langle W(\Gamma)\rangle\) : démontrer qu’ils décroissent selon l’aire de la boucle, \(\exp(-\sigma\,\mathrm{Area}(\Gamma))\), pour \(\sigma>0\).
+  \item \textbf{Interprétation} : \(\sigma>0\) indique un flux tube entre charges colorées : confinement (pas de quark/gluon isolé).
+\end{itemize}
+
+\noindent
+En pratique, cette étape (confinement) est souvent traitée parallèlement au \emph{mass gap}, car les deux aspects sont étroitement liés.
+
+\section*{Conclusion : “Créons la preuve, pas à pas”}
+
+\begin{itemize}
+  \item \textbf{Étape 1} : Régulariser (lattice ou multi-échelle).
+  \item \textbf{Étape 2} : Prouver la \emph{limite continuum} \(\Rightarrow\) existence d’une \emph{mesure Yang--Mills} 4D.
+  \item \textbf{Étape 3} : Vérifier \emph{gauge invariance}, axiomes OS, $\Rightarrow$ construction Minkowski.
+  \item \textbf{Étape 4} : \emph{Exponential decay} (fonctions de corrélations) $\Rightarrow$ \emph{mass gap} $>0$.
+  \item \textbf{Étape 5} : (Suppl.) \emph{Confinement} : démontrer la “aire law”.
+\end{itemize}
+
+\noindent
+\textbf{Aboutissement} : L’on établit \textbf{formellement} que la théorie de Yang--Mills en 4D (compacte, ex. \(\mathrm{SU}(3)\)) \emph{existe} et possède un spectre \emph{strictement} massif : le fameux \emph{mass gap}. C’est exactement le \emph{cœur} du \textbf{Millennium Problem} correspondant. La \emph{physique} (lattice QCD, asymptotic freedom, confinement empirique) soutient depuis longtemps cette conclusion ; la tâche mathématique consiste à \emph{rassembler toutes les briques} et \emph{fermer la démonstration} dans un formalisme complet. 
+\end{document}
