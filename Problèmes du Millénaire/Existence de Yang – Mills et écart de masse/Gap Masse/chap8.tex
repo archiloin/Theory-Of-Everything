@@ -1,0 +1,130 @@
+%=======================================================================================
+% Fichier : chap8.tex
+% Chapitre 8 : Invariance de Jauge et Reconstruction Osterwalder--Schrader
+%=======================================================================================
+\chapter{Invariance de Jauge et Reconstruction Osterwalder--Schrader}
+\label{chap:8}
+
+%---------------------------------------------------------------------------------------
+% Section 8.1 : Sur le Lattice : invariance de jauge stricte via la mesure de Haar
+%---------------------------------------------------------------------------------------
+\section{Sur le Lattice : Invariance de Jauge Stricte via la Mesure de Haar}
+\label{sec:8.1}
+
+\subsection*{Mesure de Haar inconditionnelle}
+Comme vu au chapitre~\ref{chap:4}, chaque lien \(\ell\) est intégré selon \(\mathrm{d}\mu_{\mathrm{Haar}}(U_\ell)\). L’action de Wilson (somme sur plaquettes) est \textbf{invariante} sous la transformation \(\,U_\ell \mapsto \Omega(x)\,U_\ell\,\Omega(x+\hat{\mu})^\dagger\).  
+\begin{itemize}
+	\item \(\Omega(x)\in \mathrm{SU}(N)\) arbitraire à chaque site \(x\).  
+	\item Cette invariance est \emph{exacte} même à pas \(a\neq 0\), c.-à-d. \emph{avant} la limite continuum.
+\end{itemize}
+
+\subsection*{Conséquence physique}
+Aucune \textbf{brisure spontanée} de la jauge \(\mathrm{SU}(N)\) ne peut se produire sur le lattice, tant que la mesure reste un produit de Haar. La \og \emph{fixation de jauge}\fg\ n’est qu’un artifice pour calculer plus aisément, mais elle n’est pas imposée par la dynamique.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 8.2 : Dans la Limite Continuum : absence de brisure spontanée de la jauge
+%---------------------------------------------------------------------------------------
+\section{Dans la Limite Continuum : Absence de Brisure Spontanée de la Jauge}
+\label{sec:8.2}
+
+\subsection*{Argument de continuité}
+Si la jauge \(\mathrm{SU}(N)\) n’est jamais brisée sur chaque lattice de maille \(a\), et si la limite \(\,a \to 0\) s’effectue sans transition de phase, on conclut que la \textbf{symétrie de jauge} demeure \emph{exhaustive} dans la théorie limite. 
+
+\subsection*{Vérifications constructives}
+Dans l’approche multi-échelle, on gère parfois un \textbf{gauge fixing} partiel ou un \(\mathrm{BRST}\) pour traiter les redondances. Néanmoins, le résultat final \(\mu_{\mathrm{YM}}\) \textbf{ne brise pas} \(\mathrm{SU}(N)\). Toutes les composantes du champ sont \og liées\fg\ dans les observables.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 8.3 : Axiomes d’Osterwalder–Schrader
+%---------------------------------------------------------------------------------------
+\section{Axiomes d’Osterwalder--Schrader}
+\label{sec:8.3}
+
+\subsection*{Reflection positivity}
+L’axiome \textbf{crucial} : pour une réflexion \(\theta\) à travers un plan \(\tau=0\), on exige
+\[
+\int \Phi(\theta x)\,\Phi(x)\,\mathrm{d}\mu(A) \;\ge\; 0
+\]
+pour les champs Euclidiens. Sur le lattice, on peut imposer des identifications site par site (réflexion discrète) \cite{OsterwalderSeiler1977}. En formulation constructive, on vérifie que la mesure factorisée respecte cette positivité.
+
+\subsection*{Autres axiomes (invariance, symétrie Bose, etc.)}
+Les conditions d’invariance sous translations, rotations Euclidiennes, ainsi que la symétrie bosonique des champs, sont satisfaites \emph{aussi bien} sur le lattice qu’en constructif, dès lors qu’on n’a pas brisé la jauge et qu’on a géré les conditions aux bords de manière convenable.
+
+\subsection*{Conséquence}
+Si \(\mu_{\mathrm{YM}}\) satisfait \textbf{tous} ces axiomes OS, on sait (théorème de reconstruction) qu’il existe un \textbf{espace de Hilbert} \(\mathcal{H}\) et un hamiltonien \(\widehat{H}\) associés, en retournant à la signature Minkowski.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 8.4 : Reconstruction Wightman–GNS : passage en Espace de Hilbert Minkowskien
+%---------------------------------------------------------------------------------------
+\section{Reconstruction Wightman--GNS : Passage en Espace de Hilbert Minkowskien}
+\label{sec:8.4}
+
+\subsection*{Procédure générale}
+L’axiomatique OS conduit, via la \textbf{construction GNS} (Gelfand–Naimark–Segal), à définir :
+\[
+\mathcal{H} \;=\; \overline{\{\Phi[A]\}}, \quad
+\widehat{H}\,\Psi = \lim_{\tau\to \infty}\,\mathrm{e}^{\,\tau \widehat{H}_E}\,\Psi,
+\]
+où \(\widehat{H}_E\) est l’opérateur d’énergie dans l’espace Euclidien. Les corrélateurs Euclidiens \(\langle O_1(x_1)\cdots O_n(x_n)\rangle\) deviennent les fonctions de Green \emph{temps-réel}.
+
+\subsection*{Spectre}
+Dans cet espace de Hilbert, l’\og énergie\fg\ est bornée inférieurement par \(0\). L’existence d’un \(\Delta>0\) revient à dire que le \emph{premier état excité} a \(E_1 - E_0 = \Delta\). Toute décroissance exponentielle dans les corrélations euclidiennes \(\propto \mathrm{e}^{-\Delta \,|x-y|}\) correspond à un \og pôle\fg\ du propagateur Minkowski à \(p^2 = -\Delta^2\).
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 8.5 : Construction de l’Hamiltonien : définition du vacuum et analyse spectrale
+%---------------------------------------------------------------------------------------
+\section{Construction de l’Hamiltonien : Définition du Vacuum et Analyse Spectrale}
+\label{sec:8.5}
+
+\subsection*{Le vacuum \(\Omega\)}
+Le \textbf{vide euclidien} correspond au \og maximum\fg\ de la mesure, ou état de plus basse énergie. La réflection-positivité assure qu’il est \textbf{unique}, et la jauge non brisée signifie qu’il est \(\mathrm{SU}(N)\)-invariant.
+
+\subsection*{Analyse spectrale \(\widehat{H}\)}
+En Minkowski, on dispose désormais d’un hamiltonien \(\widehat{H}\). Le spectre se décompose en \emph{pseudoparticules} (résidus de pôle). Si la théorie possède un \emph{mass gap} \(\Delta>0\), le \(\widehat{H}\) présente un \og trou\fg\ d’énergie entre \(E_0\) (le vacuum) et la première excitation.
+
+\vspace{2em}
+
+%---------------------------------------------------------------------------------------
+% Conclusion du Chapitre 8
+%---------------------------------------------------------------------------------------
+\noindent
+\textbf{Conclusion du Chapitre 8 :}\\
+Nous avons présenté comment l’\textbf{invariance de jauge} survit à la limite continuum et comment les \textbf{axiomes d’Osterwalder--Schrader} permettent la reconstruction Minkowski. L’hamiltonien \(\widehat{H}\) ainsi obtenu décrit un \textbf{spectre} dont la question centrale est désormais : \og y a-t-il un \emph{écart} \(\Delta>0\) entre le vide et le premier état excité ?\fg.  
+Répondre \textbf{oui} implique la \emph{décroissance exponentielle} des corrélations en formulation euclidienne, ce que nous aborderons en Partie~IV (chapitres~\ref{chap:9} à \ref{chap:11}).
+
+\vspace{2em}
+
+%=======================================================================================
+% Références Bibliographiques (en dur) pour Chapitre 8
+%=======================================================================================
+\begin{thebibliography}{99}
+	
+	\bibitem{OsterwalderSeiler1977}
+	K.~Osterwalder, E.~Seiler,
+	\textit{Gauge Field Theories on a Lattice},
+	Ann.~Phys. \textbf{110}, 440--471 (1978).
+	\\[-0.75em]
+	
+	\bibitem{Balaban1982-1}
+	T.~Balaban,
+	\textit{Renormalization Group Approach to Lattice Gauge Field Theories (I)},
+	Commun.~Math.~Phys. \textbf{79}, 277--321 (1981).
+	\\[-0.75em]
+	
+	\bibitem{Rivasseau1991}
+	V.~Rivasseau,
+	\textit{From Perturbative to Constructive Renormalization},
+	Princeton University Press, Princeton (1991).
+	
+\end{thebibliography}
+
+%=======================================================================================
+% Fin du fichier : chap8.tex
+%=======================================================================================

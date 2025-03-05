@@ -1,0 +1,232 @@
+%===============================================================
+% FICHIER PRINCIPAL : mass_gap_yang_mills.tex
+%===============================================================
+\documentclass[12pt,a4paper]{book}
+
+%---------------------------
+% PACKAGES DE BASE
+%---------------------------
+\usepackage[utf8]{inputenc}     % Encodage UTF-8
+\usepackage[T1]{fontenc}        % Encodage des caractères (accents, etc.)
+\usepackage[french]{babel}      % Support de la langue française (typographie, césure)
+\usepackage{amsmath,amssymb}    % Symboles et environnements mathématiques standard
+\usepackage{amsthm}             % Environnements de théorèmes (theorem, lemma, proof, etc.)
+\usepackage{lmodern}            % Police vectorielle "Latin Modern"
+\usepackage{geometry}           % Contrôle des marges de page
+\usepackage{graphicx}           % Inclusion d'images
+\usepackage{hyperref}           % Hyperliens et PDF interactif
+\usepackage{tocloft}            % Personnalisation de la table des matières (optionnel)
+
+%---------------------------
+% RÉGLAGE GÉOMÉTRIE
+%---------------------------
+\geometry{margin=2.5cm}         % Ajustez les marges si besoin
+
+%---------------------------
+% MISE EN PAGE / STYLES
+%---------------------------
+% (Optionnel) Vous pouvez personnaliser l'apparence des chapitres, sections, etc.
+% Les commandes ci-dessous sont juste un exemple
+%\usepackage{titlesec}
+%\titleformat{\chapter}[hang]{\bfseries\LARGE}{\thechapter.}{1em}{}
+
+%---------------------------
+% CONFIGURATION HYPERREF
+%---------------------------
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,      % Couleur des liens internes (ex. table des matières)
+	citecolor=magenta,   % Couleur des liens de bibliographie
+	urlcolor=teal,       % Couleur des liens externes
+	pdfauthor={AO},
+	pdftitle={Démonstration Pas à Pas du Mass Gap en Yang--Mills 4D}
+}
+
+%---------------------------
+% ENVIRONNEMENTS DE THÉORÈMES
+%---------------------------
+% Vous pouvez personnaliser si nécessaire
+\newtheorem{theorem}{Théorème}[chapter]
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollaire}
+\theoremstyle{remark}
+\newtheorem{remark}{Remarque}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Définition}
+\theoremstyle{plain}
+% Pour la preuve, on peut utiliser \begin{proof}...\end{proof} de amsthm
+
+%---------------------------
+% INFOS DU DOCUMENT
+%---------------------------
+\title{%
+	Yang--Mills 4D : \\
+	\textit{Au Cœur de la Cuisine Quantique} \\
+	\large Démonstration "Pas à Pas" du Gap de Masse
+}
+\author{AO}
+\date{\today}
+
+%===============================================================
+\begin{document}
+	%===============================================================
+	
+	%---------------------------------------------------------------
+	% Numérotation romaine pour les pages préliminaires
+	%---------------------------------------------------------------
+	\frontmatter
+	
+	%---------------------------------------------------------------
+	% Inclusions des pages i, ii, iii, iv, etc. (préliminaires)
+	%---------------------------------------------------------------
+	\input{page_i.tex}      % Page de Titre
+	\input{page_ii.tex}     % Dédicace ou autre
+	\input{page_iii.tex}    % Avertissement / Disclaimer
+	\input{page_iv.tex}     % Table des matières (ou autre)
+	
+	%---------------------------------------------------------------
+	% Passage au corps principal : numérotation arabe
+	%---------------------------------------------------------------
+	\mainmatter
+	
+	%---------------------------------------------------------------
+	% Partie I : Introduction et Contexte
+	%---------------------------------------------------------------
+	\part*{Partie I : Introduction et Contexte}
+	\addcontentsline{toc}{part}{Partie I : Introduction et Contexte}
+	
+	%---------------------------------------------------------------
+	% Chapitre 1 (p.1 – p.3)
+	%---------------------------------------------------------------
+	\chapter{Présentation Générale du Problème}
+	\label{chap:1}
+	\input{chap1.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 2 (p.4 – p.9)
+	%---------------------------------------------------------------
+	\chapter{Historique et Motivations Théoriques}
+	\label{chap:2}
+	\input{chap2.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 3 (p.10 – p.15)
+	%---------------------------------------------------------------
+	\chapter{Notations et Préliminaires Mathématiques}
+	\label{chap:3}
+	\input{chap3.tex}
+	
+	%---------------------------------------------------------------
+	% Partie II : Régularisations et Construction de la Théorie
+	%---------------------------------------------------------------
+	\part*{Partie II : Régularisations et Construction de la Théorie}
+	\addcontentsline{toc}{part}{Partie II : Régularisations et Construction de la Théorie}
+	
+	%---------------------------------------------------------------
+	% Chapitre 4 (p.16 – p.30)
+	%---------------------------------------------------------------
+	\chapter{La Formulation sur Réseau (Lattice Gauge Theory)}
+	\label{chap:4}
+	\input{chap4.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 5 (p.31 – p.45)
+	%---------------------------------------------------------------
+	\chapter{La Formulation Multi-Échelle Constructive}
+	\label{chap:5}
+	\input{chap5.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 6 (p.46 – p.50)
+	%---------------------------------------------------------------
+	\chapter{Comparaison et Unification des Deux Approches}
+	\label{chap:6}
+	\input{chap6.tex}
+	
+	%---------------------------------------------------------------
+	% Partie III : Passage à la Limite Continuum & Axiomes QFT
+	%---------------------------------------------------------------
+	\part*{Partie III : Passage à la Limite Continuum \& Axiomes QFT}
+	\addcontentsline{toc}{part}{Partie III : Passage à la Limite Continuum \& Axiomes QFT}
+	
+	%---------------------------------------------------------------
+	% Chapitre 7 (p.51 – p.62)
+	%---------------------------------------------------------------
+	\chapter{Contrôle de l’Ultraviolet et Limite \texorpdfstring{$a\to 0$}{a -> 0}}
+	\label{chap:7}
+	\input{chap7.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 8 (p.63 – p.78)
+	%---------------------------------------------------------------
+	\chapter{Invariance de Jauge et Reconstruction Osterwalder--Schrader}
+	\label{chap:8}
+	\input{chap8.tex}
+	
+	%---------------------------------------------------------------
+	% Partie IV : Preuve du Mass Gap et Conséquences Physiques
+	%---------------------------------------------------------------
+	\part*{Partie IV : Preuve du Mass Gap et Conséquences Physiques}
+	\addcontentsline{toc}{part}{Partie IV : Preuve du Mass Gap et Conséquences Physiques}
+	
+	%---------------------------------------------------------------
+	% Chapitre 9 (p.79 – p.90)
+	%---------------------------------------------------------------
+	\chapter{Corrélations Euclidiennes et Décroissance Exponentielle}
+	\label{chap:9}
+	\input{chap9.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 10 (p.91 – p.100)
+	%---------------------------------------------------------------
+	\chapter{Existence d’un Gap Strictement Positif \texorpdfstring{$\Delta>0$}{Delta>0}}
+	\label{chap:10}
+	\input{chap10.tex}
+	
+	%---------------------------------------------------------------
+	% Chapitre 11 (p.101 – p.105)
+	%---------------------------------------------------------------
+	\chapter{Perspectives et Ouvertures}
+	\label{chap:11}
+	\input{chap11.tex}
+	
+	%---------------------------------------------------------------
+	% Annexes (A, B, C) et Références
+	%---------------------------------------------------------------
+	\appendix
+	
+	%---------------------------------------------------------------
+	% Annexe A (p.106 – p.110)
+	%---------------------------------------------------------------
+	\chapter{Rappels de Mathématiques et Physique}
+	\label{ann:A}
+	\input{annA.tex}
+	
+	%---------------------------------------------------------------
+	% Annexe B (p.111 – p.120)
+	%---------------------------------------------------------------
+	\chapter{Lemmes Techniques de Renormalisation}
+	\label{ann:B}
+	\input{annB.tex}
+	
+	%---------------------------------------------------------------
+	% Annexe C (p.121 – p.125)
+	%---------------------------------------------------------------
+	\chapter{Méthodes Numériques sur Réseau}
+	\label{ann:C}
+	\input{annC.tex}
+	
+	%---------------------------------------------------------------
+	% Bibliographie Finale (p.126 – p.130) (Optionnel)
+	%---------------------------------------------------------------
+	\begin{thebibliography}{99}
+		% Articles historiques (Wilson 1974, Gross–Wilczek, etc.)
+		% Travaux Balaban, Rivasseau, Freedman
+		% Ouvrages de référence (Glimm–Jaffe, etc.)
+		% Ajoutez ici toutes vos références si vous préférez une biblio globale
+	\end{thebibliography}
+	
+	%===============================================================
+\end{document}
+%===============================================================

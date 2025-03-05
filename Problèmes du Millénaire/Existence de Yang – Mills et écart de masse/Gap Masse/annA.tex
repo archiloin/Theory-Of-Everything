@@ -1,0 +1,114 @@
+%=======================================================================================
+% Fichier : annA.tex
+% Annexe A : Rappels de Mathématiques et Physique
+%=======================================================================================
+\chapter{Rappels de Mathématiques et Physique}
+\label{ann:A}
+
+%---------------------------------------------------------------------------------------
+% Section A.1 : Groupes de Lie, Algèbres de Lie : révisions rapides
+%---------------------------------------------------------------------------------------
+\section{Groupes de Lie, Algèbres de Lie : Révisions Rapides}
+\label{sec:A.1}
+
+\subsection*{Définition générale}
+Un \textbf{groupe de Lie} est un ensemble muni à la fois d’une structure de groupe (loi de composition, existence d’un neutre et d’un inverse) et d’une \emph{variété différentielle} permettant de définir localement des coordonnées et d’effectuer des dérivations lisses. Exemples classiques :
+\[
+\mathrm{U}(1), \quad \mathrm{SU}(N), \quad \mathrm{SO}(N), \quad \mathrm{Sp}(N), \dots
+\]
+
+\subsection*{Algèbre de Lie}
+À tout groupe de Lie \(\mathcal{G}\) est associée une \emph{algèbre de Lie} \(\mathfrak{g}\), qui n’est autre que l’espace tangent en l’élément neutre, muni du crochet \([\cdot,\cdot]\) dérivé de la \og différentielle de la loi de groupe\fg.  
+Pour \(\mathrm{SU}(N)\), \(\mathfrak{su}(N)\) se caractérise par les matrices \(\,N\times N\) \textbf{anti-hermitiennes}, traceless, de dimension réelle \(N^2-1\).
+
+\subsection*{Exponentielle de matrice}
+La correspondance entre l’algèbre et le groupe s’opère via \(\exp : \mathfrak{g}\to \mathcal{G}\). Pour une matrice \(X\in \mathfrak{g}\), on définit
+\[
+\exp(X) \;=\; \sum_{k=0}^\infty \frac{X^k}{k!}.
+\]
+Dans \(\mathrm{SU}(N)\), cela produit des matrices unitaires à déterminant 1.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section A.2 : Bases sur les Champs de Jauge : définitions et conventions
+%---------------------------------------------------------------------------------------
+\section{Bases sur les Champs de Jauge : Définitions et Conventions}
+\label{sec:A.2}
+
+\subsection*{Connexion et courbure}
+Dans un espace-temps \(\mathbb{R}^4\) (euclidien), un \textbf{champ de jauge} \(\,A_\mu^a(x)\) prend ses valeurs dans \(\mathfrak{su}(N)\). La \emph{courbure} (ou tenseur de force) est
+\[
+F_{\mu\nu}^a \;=\; \partial_\mu A_\nu^a - \partial_\nu A_\mu^a \;+\; g\,f^{abc}\,A_\mu^b\,A_\nu^c,
+\]
+où \(f^{abc}\) sont les constantes de structure de \(\mathrm{SU}(N)\). L’action Yang--Mills s’écrit :
+\[
+S_{\mathrm{YM}} \;=\; \frac{1}{2g^2}\,\int \mathrm{d}^4x\, \mathrm{Tr}\bigl(F_{\mu\nu}F^{\mu\nu}\bigr).
+\]
+
+\subsection*{Symétries de jauge}
+Une transformation locale \(\,\Omega(x)\in \mathrm{SU}(N)\) agit sur \(A_\mu\) selon
+\[
+A_\mu \;\mapsto\; \Omega\,A_\mu\,\Omega^\dagger \;+\; \frac{1}{\mathrm{i}\,g}\,\Omega\,\partial_\mu\Omega^\dagger.
+\]
+Cette invariance explique pourquoi on intègre, dans la formulation path integral, sur toutes les configurations de \(\,A_\mu\) modulo cette redondance.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section A.3 : Rappels sur la Théorie de la Mesure et intégrales de chemin
+%---------------------------------------------------------------------------------------
+\section{Rappels sur la Théorie de la Mesure et Intégrales de Chemin}
+\label{sec:A.3}
+
+\subsection*{Théorie de la mesure abstraite}
+Une \emph{mesure} \(\mu\) sur un espace \(\mathcal{X}\) assigne un volume (ou une probabilité) à chaque sous-ensemble mesurable de \(\mathcal{X}\). Pour une QFT, \(\mathcal{X}\) est (schématiquement) l’espace de toutes les configurations de champ \(\,A_\mu(x)\).
+
+\subsection*{Intégrales de chemin}
+On écrit de manière formelle :
+\[
+\int \mathcal{D}A\,\exp\bigl(-S_{\mathrm{YM}}[A]\bigr),
+\]
+mais en pratique, c’est une \textbf{limite de mesures} régulières (lattice, cutoffs, expansions constructives...). L’objectif est que cette limite existe et définisse une \og vraie\fg\ mesure \(\mu_{\mathrm{YM}}\).
+
+\subsection*{Positivité, Réflexion, etc.}
+Pour reconstruire une théorie \emph{physique}, la mesure doit respecter des conditions de \textbf{positivité}, d’\textbf{invariance}, etc. (axiomes OS), qui garantiront l’existence d’un hamiltonien et d’un spectre d’excitations dans la formulation Minkowski.
+
+\vspace{2em}
+
+%---------------------------------------------------------------------------------------
+% Conclusion de l’Annexe A
+%---------------------------------------------------------------------------------------
+\noindent
+\textbf{Conclusion de l’Annexe A :}\\
+Ces rappels sur les groupes de Lie, la structure des champs de jauge et la théorie de la mesure posent un \emph{cadre} mathématique général, indispensable pour saisir la \textbf{construction} et la \textbf{renormalisation} de Yang--Mills 4D.  
+
+\vspace{2em}
+
+%=======================================================================================
+% Références Bibliographiques (en dur) pour l’Annexe A
+%=======================================================================================
+\begin{thebibliography}{99}
+	
+	\bibitem{Knapp2002}
+	A.~W. Knapp,
+	\textit{Lie Groups Beyond an Introduction}, 2nd ed.,
+	Birkhäuser, Boston (2002).
+	\\[-0.75em]
+	
+	\bibitem{Georgi1999}
+	H.~Georgi,
+	\textit{Lie Algebras in Particle Physics}, 2nd ed.,
+	Westview Press, Boulder (1999).
+	\\[-0.75em]
+	
+	\bibitem{Nakahara2003}
+	M.~Nakahara,
+	\textit{Geometry, Topology and Physics}, 2nd ed.,
+	CRC Press, Boca Raton (2003).
+	
+\end{thebibliography}
+
+%=======================================================================================
+% Fin du fichier : annA.tex
+%=======================================================================================

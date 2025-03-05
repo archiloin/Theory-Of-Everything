@@ -1,0 +1,165 @@
+%=======================================================================================
+% Fichier : chap4.tex
+% Chapitre 4 : La Formulation sur Réseau (Lattice Gauge Theory)
+%=======================================================================================
+\chapter{La Formulation sur Réseau (Lattice Gauge Theory)}
+\label{chap:4}
+
+%---------------------------------------------------------------------------------------
+% Section 4.1 : Discrétisation de l’Espace-Temps 4D
+%---------------------------------------------------------------------------------------
+\section{Discrétisation de l’Espace-Temps 4D}
+\label{sec:4.1}
+
+Dans l’approche \emph{lattice}, on remplace le continuum \(\mathbb{R}^4\) par un réseau hypercubique de pas \(a>0\). Les points (ou \og nœuds\fg) du réseau sont notés \(\{x\}\) avec \(\,x \in a\,\mathbb{Z}^4\). L’idée, introduite par K.\,G.~Wilson \cite{Wilson1974-1}, est la suivante :
+
+\begin{itemize}
+	\item \textbf{Rôle de la régularisation} : la discrétisation agit comme un cutoff ultraviolet (UV) naturel, éliminant toute intégrale divergente de haute énergie.  
+	\item \textbf{Restitution du continuum} : on souhaite étudier la limite \(\,a \to 0\), où l’on espère recouvrer la théorie Yang--Mills originale en dimension 4.
+\end{itemize}
+
+Dans cette section, nous expliquons les points clés de cette discrétisation et la façon dont la jauge \(\mathrm{SU}(N)\) se traduit en variables dites \og de liaison\fg.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 4.2 : Variables de Liaison U_\ell ∈ SU(N)
+%---------------------------------------------------------------------------------------
+\section{Variables de Liaison \texorpdfstring{\(U_\ell \in \mathrm{SU}(N)\)}{U_l in SU(N)}}
+\label{sec:4.2}
+
+\subsection*{Définition sur chaque arête}
+Au lieu de considérer un potentiel de jauge \(A_\mu(x)\) en chaque point, on associe à chaque \textbf{arête} (ou lien) \(\ell\) reliant deux sites voisins \(\,x\) et \(\,x+\hat{\mu}\) une matrice \(\mathrm{SU}(N)\), notée \(U_\ell\). On peut l’interpréter comme l’\og exponentielle\fg\ discrète de la composante \(A_\mu\) entre ces deux sites :
+\[
+U_\ell \;\approx\; \exp\!\Bigl\{\mathrm{i}\,g\,a\, A_\mu(x)\Bigr\}.
+\]
+La \textbf{dimension du groupe} \(\mathrm{SU}(N)\) est finie \((N^2-1)\). Sur chaque lien, on peut alors intégrer sur la \emph{mesure de Haar} pour couvrir uniformément toutes les configurations possibles.
+
+\subsection*{Invariance de jauge discrète}
+Pour une transformation de jauge locale \(\,\Omega(x)\in \mathrm{SU}(N)\) en chaque site \(x\), l’arête \(\ell\) reliant \(x\) à \(x+\hat{\mu}\) se transforme en
+\[
+U_\ell \;\mapsto\; \Omega(x)\,U_\ell\,\Omega(x+\hat{\mu})^\dagger.
+\]
+Ceci généralise parfaitement la transformation continue \(\,A_\mu \mapsto \Omega\,A_\mu\,\Omega^\dagger + \dots\).
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 4.3 : Action de Wilson : Tr(1 − U_□) et propriétés
+%---------------------------------------------------------------------------------------
+\section{Action de Wilson : \texorpdfstring{\(\mathrm{Tr}[\,1 - U_\square]\)}{Tr(1 - U_sq)} et propriétés}
+\label{sec:4.3}
+
+\subsection*{Définition}
+Une \textbf{plaquette} \(\square\) est la plus petite boucle rectangulaire (un carré dans le réseau hypercubique) formée par 4 liens. On définit
+\[
+U_\square \;=\; U_{\ell_1}\,U_{\ell_2}\,U_{\ell_3}^\dagger\,U_{\ell_4}^\dagger
+\]
+(en convenant d’un sens positif). L’\textbf{action de Wilson} s’écrit:
+\[
+S_{\mathrm{W}} \;=\; \sum_{\square} \Bigl(\,1 - \tfrac{1}{N}\,\mathrm{Re}\,\mathrm{Tr}\,[U_\square]\Bigr),
+\]
+ou une variante proportionnelle à \(\mathrm{Tr}(1 - U_\square)\). Dans la limite \(\,a\to 0\), cette quantité reproduit \(\int \mathrm{d}^4 x\, \mathrm{Tr}\,(F_{\mu\nu}F^{\mu\nu})\) (cf. \cite{Wilson1974-1,Creutz1983}).
+
+\subsection*{Propriétés remarquables}
+\begin{itemize}
+	\item \textbf{Invariance de jauge exacte} : chaque plaquette est un produit de liens en boucle, donc toute transformation \(\Omega(x)\) se compense.  
+	\item \textbf{Limite d’action classique} : si \(U_\ell \approx \exp(\mathrm{i}\,g\,a\,A_\mu)\), alors \(U_\square \approx \exp(\mathrm{i}\,a^2\, F_{\mu\nu})\).  
+	\item \textbf{Contrôle UV} : tout est \emph{fini} à maillage fixe, et on fait ensuite tendre \(a\to 0\).
+\end{itemize}
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 4.4 : Mesure Invariante de Jauge (Produit de Haar)
+%---------------------------------------------------------------------------------------
+\section{Mesure Invariante de Jauge (Produit de Haar)}
+\label{sec:4.4}
+
+\subsection*{Intégrale sur chaque lien}
+Pour définir la fonction de partition \(\mathcal{Z}\) ou les observables moyennes \(\langle O\rangle\), on effectue l’intégration sur \textbf{tous} les liens \(\ell\). Autrement dit,
+\[
+\mathcal{Z} \;=\; \int \prod_{\ell}\mathrm{d}\mu_{\mathrm{Haar}}(U_\ell)\;\exp\bigl(-\beta\, S_{\mathrm{W}}\bigr),
+\]
+où \(\mathrm{d}\mu_{\mathrm{Haar}}(U_\ell)\) est la mesure de Haar normalisée sur \(\mathrm{SU}(N)\), et \(\beta = 2N/g^2\) est un paramètre de \og température inverse\fg.
+
+\subsection*{Positivité et invariance}
+La mesure de Haar est \textbf{positive} et \textbf{bi-invariante} (gauche/droite) : pour toute fonction \(\phi(U)\), on a
+\[
+\int \phi(\Omega U)\,\mathrm{d}\mu_{\mathrm{Haar}}(U) \;=\;
+\int \phi(U\,\Omega)\,\mathrm{d}\mu_{\mathrm{Haar}}(U) \;=\;
+\int \phi(U)\,\mathrm{d}\mu_{\mathrm{Haar}}(U).
+\]
+Ceci sous-tend l’invariance de jauge discrète et la \emph{reflection positivity} sur le lattice \cite{OsterwalderSeiler1977}.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 4.5 : Limite de Volume Infini : méthode et difficultés
+%---------------------------------------------------------------------------------------
+\section{Limite de Volume Infini : Méthode et Difficultés}
+\label{sec:4.5}
+
+\subsection*{Volume fini, conditions aux bords}
+Souvent, on considère un \textbf{réseau fini} de taille \(L^4\) (périodique ou avec conditions Dirichlet) pour que \(\mathcal{Z}\) soit bien définie. Puis on fait tendre \(L\to\infty\). Deux complications majeures apparaissent :
+\begin{itemize}
+	\item \textbf{Transitions de phase} : faut-il craindre une transition entre phase confinée et phase déconfinée à volume infini ? En 4D, les simulations indiquent qu’à couplage fort on conserve la phase confinée ; à couplage faible (c.-à-d. \(\beta\) grand), on tend vers la théorie continuum.
+	\item \textbf{Normalisation} : s’assurer que les observables (corrélations) convergent uniformément lorsque \(L\to \infty\).
+\end{itemize}
+
+\subsection*{Méthodes d’analyse}
+Les \emph{expansions en lien fort} (pour \(\beta\) petit) ou \emph{expansions en lien faible} (pour \(\beta\) grand) permettent de sonder le comportement. En pratique, une échelle critique \(\beta_c\) peut exister, mais en \(\mathrm{SU}(3)\) 4D pure, on n’observe qu’une \textbf{phase confinée} stable menant à un \emph{mass gap}.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 4.6 : Contrôle des Artéfacts de Maillage (a → 0)
+%---------------------------------------------------------------------------------------
+\section{Contrôle des Artéfacts de Maillage \texorpdfstring{\((a \to 0)\)}{(a -> 0)}}
+\label{sec:4.6}
+
+\subsection*{Renormalisation sur réseau}
+À mesure que \(a\to 0\), \(\beta=2N/g^2\) doit être ajusté pour rester dans la région \emph{physique}. Grâce à la \textbf{liberté asymptotique} (voir chapitre~\ref{chap:5}), on s’attend à ce que le couplage \(g^2(\mu)\) devienne \emph{petit} à haute énergie (donc petit \(\,a\)).
+
+\subsection*{Résultats numériques}
+De nombreux travaux (p. ex. Creutz \cite{Creutz1983}, APE Collaboration, etc.) ont vérifié que les \emph{observables gauge-invariantes} (telles que les boucles de Wilson de grande taille) convergent vers des valeurs \textbf{finies et non triviales} à la limite continuum. C’est un signe fort qu’une \textbf{théorie 4D} cohérente existe bien sous-jacente.
+
+\vspace{2em}
+
+%---------------------------------------------------------------------------------------
+% Conclusion du Chapitre 4
+%---------------------------------------------------------------------------------------
+\noindent
+\textbf{Conclusion du Chapitre 4 :}\\
+Nous avons exposé la \textbf{formulation sur réseau} comme régularisation naturelle pour Yang--Mills 4D : chaque lien porte une variable \(\mathrm{SU}(N)\) intégrée selon la mesure de Haar, l’action de Wilson assure l’invariance de jauge et donne un équivalent discret de \(\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\). Cette approche, initiée par Wilson, s’est avérée cruciale pour les \textbf{simulations numériques}, qui mettent en évidence le confinement et le \emph{mass gap}.  
+Dans le prochain chapitre~\ref{chap:5}, nous verrons une seconde grande famille de méthodes : la \textbf{formulation multi-échelle} (renormalisation constructive), qui opère directement dans le continuum mais organise la théorie par tranches d’échelle de moment.
+
+\vspace{2em}
+
+%=======================================================================================
+% Références Bibliographiques (en dur) pour Chapitre 4
+%=======================================================================================
+\begin{thebibliography}{99}
+	
+	\bibitem{Wilson1974-1}
+	K.~G. Wilson,
+	\textit{Confinement of Quarks},
+	Phys.~Rev.~D \textbf{10}, 2445--2459 (1974).
+	\\[-0.75em]
+	
+	\bibitem{Creutz1983}
+	M.~Creutz,
+	\textit{Quarks, Gluons and Lattices},
+	Cambridge University Press, Cambridge (1983).
+	\\[-0.75em]
+	
+	\bibitem{OsterwalderSeiler1977}
+	K.~Osterwalder, E.~Seiler,
+	\textit{Gauge Field Theories on a Lattice},
+	Ann.~Phys. \textbf{110}, 440--471 (1978).
+	
+\end{thebibliography}
+
+%=======================================================================================
+% Fin du fichier : chap4.tex
+%=======================================================================================

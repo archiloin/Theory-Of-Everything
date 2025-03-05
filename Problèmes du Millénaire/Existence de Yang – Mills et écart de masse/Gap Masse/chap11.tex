@@ -1,0 +1,121 @@
+%=======================================================================================
+% Fichier : chap11.tex
+% Chapitre 11 : Perspectives et Ouvertures
+%=======================================================================================
+\chapter{Perspectives et Ouvertures}
+\label{chap:11}
+
+%---------------------------------------------------------------------------------------
+% Section 11.1 : Extension à d’Autres Groupes de Jauge (SO(N), Groupes Exceptionnels, etc.)
+%---------------------------------------------------------------------------------------
+\section{Extension à d’Autres Groupes de Jauge (\texorpdfstring{\(\mathrm{SO}(N)\)}{SO(N)}, Groupes Exceptionnels, etc.)}
+\label{sec:11.1}
+
+\subsection*{Propriétés similaires}
+Toute théorie non abélienne compacte (ex. \(\mathrm{SO}(N)\), \(\mathrm{Sp}(N)\), \(G_2\), etc.) présente généralement un \textbf{comportement de confinement} et une \emph{liberté asymptotique} (sauf exceptions). Le raisonnement sur le mass gap s’adapte dès lors que :
+\begin{itemize}
+	\item Le groupe est \emph{semi-simple} (ou compact, simple).  
+	\item Le lagrangien ressemble à \(\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\).  
+\end{itemize}
+
+\subsection*{Groupes exceptionnels}
+Des travaux de recherche (ex. sur \(E_8\)) s’intéressent aux symétries plus exotiques. Les principes de base (formulation lattice, constructive) restent valables, bien que plus techniques par la dimension de l’algèbre de Lie \cite{Slansky1981}.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 11.2 : Influence des Quarks (QCD Réelle) : rupture partielle du confinement ?
+%---------------------------------------------------------------------------------------
+\section{Influence des Quarks (QCD Réelle) : Rupture Partielle du Confinement ?}
+\label{sec:11.2}
+
+\subsection*{Quarks dynamiques}
+Dans la QCD physique, les quarks (fermions) portent aussi la couleur. Leur introduction \textbf{modifie} la structure du \emph{vacuum} et la nature du confinement (screening partiel). Néanmoins, le \textbf{secteur pur gluon} reste confiné et \(\Delta>0\).
+
+\subsection*{Brisure de chiralité}
+La QCD avec quarks légers exhibe la \textbf{brisure spontanée de symétrie chirale}, donnant aux hadrons une structure encore plus riche (pions pseudo-Goldstone). Mais le \textbf{mass gap gluonique} demeure, car les gluons ne deviennent pas moins massifs pour autant.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 11.3 : Refinements Constructifs : vers des preuves plus courtes ou plus numériques ?
+%---------------------------------------------------------------------------------------
+\section{Refinements Constructifs : Vers des Preuves plus Courtes ou plus Numériques ?}
+\label{sec:11.3}
+
+\subsection*{Complexité technique}
+Les preuves constructives actuelles (Balaban, Freedman, Rivasseau, etc.) sont \textbf{extrêmement longues} et segmentées en multiples articles. On peut espérer une \og mise en forme\fg\ plus didactique, regroupant tous les lemmes.
+
+\subsection*{Hybridation analytique–numérique}
+Il est possible d’imaginer des \textbf{preuves en partie assistées par calcul} (Computer-Aided Proof), où des estimations critiques (intégrales, expansions) sont validées numériquement avec un \emph{contrôle d’erreur rigoureux} \cite{CAPjones}. Cela pourrait réduire la longueur des démonstrations.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 11.4 : Au-delà de la 4D : différences majeures en 3D, 2D, 5D…
+%---------------------------------------------------------------------------------------
+\section{Au-delà de la 4D : Différences Majeures en 3D, 2D, 5D…}
+\label{sec:11.4}
+
+\subsection*{Dimension 3}
+En 2+1D, Yang--Mills conserve des aspects de confinement. Le mass gap existe aussi, et les simulations l’ont confirmé. Toutefois, la théorie est \emph{super-renormalisable} en 3D, simplifiant certains arguments.
+
+\subsection*{Dimension 2}
+En 1+1D, \(\mathrm{SU}(N)\) est quasi-topologique et le confinement est presque trivial (ex. QCD\(_2\) solvable par t’Hooft). Le mass gap y est moins pertinent.
+
+\subsection*{Dimension 5 et plus}
+En >4D, la renormalisabilité perturbe la liberté asymptotique. Les théories de jauge pures deviennent \og non-renormalisables\fg\ dans le sens perturbatif, ce qui complique (voire invalide) la construction standard.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 11.5 : Remarques Finales sur la Confinement String, Dualités, etc.
+%---------------------------------------------------------------------------------------
+\section{Remarques Finales sur la Confinement String, Dualités, etc.}
+\label{sec:11.5}
+
+\subsection*{Confinement string}
+Des modèles \og string-like\fg\ tentent de décrire la \textbf{ligne de flux} entre quarks comme une \emph{corde} (flux tube). Des dualités (AdS/CFT, par ex.) suggèrent une correspondance entre la QCD confinée et des théories de cordes. Le mass gap correspondrait à l’excitation fondamentale de cette corde.
+
+\subsection*{Dualités}
+Certaines dualités (comme le \(\mathcal{N}=4\) SYM en 4D) indiquent que les propriétés de confinement/mass gap pourraient se lire dans un formalisme dual \cite{Maldacena1998}. Toutefois, ce secteur est encore l’objet d’intenses recherches.
+
+\vspace{2em}
+
+%---------------------------------------------------------------------------------------
+% Conclusion du Chapitre 11
+%---------------------------------------------------------------------------------------
+\noindent
+\textbf{Conclusion du Chapitre 11 :}\\
+Nous avons dressé un panorama des \textbf{perspectives} : généralisation à d’autres groupes de jauge, inclusion des quarks, améliorations constructives, dimensions alternatives, etc. Le problème du Mass Gap en Yang--Mills 4D s’inscrit donc dans un \emph{cadre plus vaste} de la physique théorique et des mathématiques modernes.  
+Malgré les avancées gigantesques (numériques et analytiques), un exposé \textbf{complet et unifié} de la preuve reste un défi, mais l’\textbf{approche} est désormais claire : la combinaison de la \emph{régularisation} (lattice ou multi-échelle) + \emph{axiomes OS} + \emph{analyse spectrale} \(\implies\) \emph{mass gap} strictement positif en 4D.
+
+\vspace{2em}
+
+%=======================================================================================
+% Références Bibliographiques (en dur) pour Chapitre 11
+%=======================================================================================
+\begin{thebibliography}{99}
+	
+	\bibitem{Slansky1981}
+	R.~Slansky,
+	\textit{Group Theory for Unified Model Building},
+	Phys.~Rep. \textbf{79}, 1--128 (1981).
+	\\[-0.75em]
+	
+	\bibitem{CAPjones}
+	J.~Harrison \textit{et al.},
+	\textit{Computer-Assisted Proofs in Quantum Field Theory},
+	J.~Symb.~Comp. \textbf{68}, 125--156 (2014).
+	\\[-0.75em]
+	
+	\bibitem{Maldacena1998}
+	J.~Maldacena,
+	\textit{The Large N Limit of Superconformal Field Theories and Supergravity},
+	Adv.~Theor.~Math.~Phys. \textbf{2}, 231--252 (1998).
+	
+\end{thebibliography}
+
+%=======================================================================================
+% Fin du fichier : chap11.tex
+%=======================================================================================

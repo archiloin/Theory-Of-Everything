@@ -1,0 +1,177 @@
+%=======================================================================================
+% Fichier : chap3.tex
+% Chapitre 3 : Notations et Préliminaires Mathématiques
+%=======================================================================================
+\chapter{Notations et Préliminaires Mathématiques}
+\label{chap:3}
+
+%---------------------------------------------------------------------------------------
+% Section 3.1 : Groupes de Lie, Jauge SU(N) : rappels de base
+%---------------------------------------------------------------------------------------
+\section{Groupes de Lie, Jauge \texorpdfstring{\(\mathrm{SU}(N)\)}{SU(N)} : Rappels de Base}
+\label{sec:3.1}
+
+\subsection*{Définition d’un groupe de Lie compact}
+Un \textbf{groupe de Lie} \(\mathcal{G}\) est un groupe muni d’une variété différentielle telle que la multiplication et l’inversion soient lisses. Dans le cas d’un groupe de Lie \emph{compact}, comme \(\mathrm{SU}(N)\), la topologie sous-jacente est compacte, garantissant notamment l’existence d’une \textbf{mesure de Haar} finie.  
+\begin{itemize}
+	\item \(\mathrm{SU}(N)\) est l’ensemble des matrices \(N\times N\) complexes unitaires \((U^\dagger U = I)\) de déterminant 1, muni de la multiplication matricielle.
+	\item Son \textbf{algèbre de Lie}, notée \(\mathfrak{su}(N)\), est constituée des matrices \emph{anti-hermitiennes} de trace nulle.
+	\item La \textbf{dimension réelle} du groupe \(\mathrm{SU}(N)\) est \(N^2 - 1\).
+\end{itemize}
+
+\subsection*{Transformations de jauge globales et locales}
+\begin{itemize}
+	\item \textbf{Jauge globale} : une transformation \(U \in \mathrm{SU}(N)\) constante sur l’espace-temps ; il s’agit d’une symétrie globale, analogue à une rotation.
+	\item \textbf{Jauge locale} : une transformation \(\mathrm{SU}(N)\) qui dépend d’un point \(x\) de l’espace-temps : \(x \mapsto U(x)\in \mathrm{SU}(N)\). La théorie de Yang--Mills exige l’invariance de l’action sous de telles transformations.
+\end{itemize}
+
+L’extension \(\mathrm{U}(1)\to \mathrm{SU}(N)\) amène la \textbf{non-commutativité} : \(\mathfrak{su}(N)\) est non abélienne pour \(N\ge2\). C’est cette non abélianité qui engendre des propriétés comme le \emph{confinement} ou le \emph{mass gap}, absentes en électromagnétisme.
+
+\begin{proof}[Référence Directe]
+	Pour un exposé approfondi des groupes de Lie et de leurs représentations, on pourra consulter \cite{Knapp2002,Hall2015} et, pour la physique, \cite{Georgi1999}.
+\end{proof}
+
+%---------------------------------------------------------------------------------------
+% Section 3.2 : Espaces de Connexions, Champs de Jauge
+%---------------------------------------------------------------------------------------
+\section{Espaces de Connexions, Champs de Jauge}
+\label{sec:3.2}
+
+\subsection*{Principe du fibré principal}
+Mathématiquement, un \textbf{champ de jauge} est une \emph{connexion} sur un \emph{fibré principal} dont la fibre est le groupe \(\mathrm{SU}(N)\). Concrètement :
+\begin{itemize}
+	\item L’\textbf{espace-temps} est noté \(\mathcal{M}\), souvent \(\mathbb{R}^4\) (ou un sous-domaine pour un volume fini).
+	\item Le \textbf{fibré principal} \(\pi: P \to \mathcal{M}\) a pour fibre \(\mathrm{SU}(N)\). Un \og point\fg\ de \(P\) correspond à un \((x, g)\) où \(x\in \mathcal{M}\) et \(g\in \mathrm{SU}(N)\).
+	\item La \textbf{connexion} \(\mathcal{A}\) est localement représentée par un \(\mathrm{su}(N)\)-\emph{champ de jauge} \(A_\mu^a(x)\).
+\end{itemize}
+
+\subsection*{Dérivée covariante et courbure}
+Une connexion \(\mathcal{A}\) se traduit en coordonnées par la \textbf{dérivée covariante} \(\mathrm{D}_\mu = \partial_\mu + \mathrm{i}\,g\,A_\mu\). La \textbf{courbure} associée (ou force de champ) est :
+\[
+F_{\mu\nu} \;=\; \partial_\mu A_\nu \;-\; \partial_\nu A_\mu \;+\; \mathrm{i}\,g\,\bigl[A_\mu, A_\nu\bigr] \;\in\;\mathfrak{su}(N).
+\]
+L’invariance de jauge locale impose la transformation covariante de \(A_\mu\) et la transformation homologue de \(F_{\mu\nu}\).
+
+%---------------------------------------------------------------------------------------
+% Section 3.3 : Variables de Lattice vs. Champs Continus
+%---------------------------------------------------------------------------------------
+\section{Variables de Lattice \textit{vs.} Champs Continus}
+\label{sec:3.3}
+
+\subsection*{Discrétisation de l’espace-temps}
+En formulation sur réseau (lattice), on remplace \(\mathcal{M}\simeq \mathbb{R}^4\) par un \textbf{réseau hypercubique} de pas \(a>0\). Les \emph{sommets} sont les nœuds du réseau, et les \emph{arêtes} sont reliées entre voisins.
+
+\subsection*{Variables de liaison}
+Plutôt que d’utiliser le potentiel \(\{A_\mu^a(x)\}\), on associe à chaque \emph{arête} \(\ell\) un \(\mathrm{SU}(N)\)-\textbf{lien} \(U_\ell\). Pour une arête reliant un site \(x\) à un site voisin \(x+\hat{\mu}\), on interprète \(U_\ell\approx\exp\!\bigl\{\mathrm{i}\,g\,a\,A_\mu(x)\bigr\}\) en première approximation.  
+\begin{itemize}
+	\item \textbf{Invariance de jauge sur le réseau} : on définit l’action d’une jauge locale par \(\ell:\,U_\ell \mapsto \Omega(x)\,U_\ell\,\Omega(x+\hat{\mu})^\dagger\) pour des \(\Omega(\cdot)\in \mathrm{SU}(N)\).
+	\item \textbf{Action de Wilson} : construite comme \(\displaystyle S_{\mathrm{W}} \;=\; \sum_{\square}\; \mathrm{Re}\!\bigl[\mathrm{Tr}(1 - U_{\square})\bigr]\), où \(U_{\square}\) est le produit des 4 liens autour de la plaquette \(\square\).
+\end{itemize}
+
+La formulation \textbf{lattice} (chapitre~\ref{chap:4}) est la clé pour régulariser la théorie (pas de divergences UV) et préserver explicitement la \textit{symétrie de jauge}.
+
+%---------------------------------------------------------------------------------------
+% Section 3.4 : Symétries, Transformations de Jauge
+%---------------------------------------------------------------------------------------
+\section{Symétries, Transformations de Jauge}
+\label{sec:3.4}
+
+\subsection*{Jauge interne non abélienne}
+Pour une \(\mathrm{SU}(N)\)-théorie de jauge, la transformation locale agit comme :
+\[
+A_\mu(x) \;\mapsto\; \Omega(x)\,A_\mu(x)\,\Omega(x)^\dagger \;+\; \tfrac{\mathrm{i}}{g}\,\Omega(x)\,\partial_\mu\!\bigl(\Omega(x)^\dagger\bigr),
+\quad
+\Omega(x)\in \mathrm{SU}(N).
+\]
+Cette \textbf{symétrie locale} est \emph{exacte} dans la formulation sur réseau, car on intègre sur la mesure de Haar indépendamment pour chaque arête \(\ell\). Dans la formulation continue, l’invariance de l’action Yang--Mills \(\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})\) sous ces transformations garantit la cohérence de la théorie \cite{ItzyksonDrouffe1989,Nakahara2003}.
+
+\subsection*{Autres symétries (translation, rotation, CPT, etc.)}
+En plus de la jauge \(\mathrm{SU}(N)\), la théorie Yang--Mills 4D est \textbf{invariante} sous les translations et rotations (ou Lorentz en formulation Minkowski), du moins en espace-temps euclidien \(\mathbb{R}^4\). En pratique :
+\begin{itemize}
+	\item Sur le \textbf{lattice}, cette invariance est réduite au groupe des translations/rotations discrètes permutant les sites. À la \emph{limite \(a\to 0\)}, on espère récupérer la pleine invariance continue.
+	\item Les \textbf{symétries CPT} (Charge-Parité-Temps) demeurent celles de la QFT habituelle, tant que l’on respecte les axiomes de champ quantique.
+\end{itemize}
+
+	%---------------------------------------------------------------------------------------
+	% Section 3.5 : Bref Aperçu sur les Axiomes d’Osterwalder–Schrader
+	%---------------------------------------------------------------------------------------
+	\section{Bref Aperçu sur les Axiomes d’Osterwalder--Schrader}
+	\label{sec:3.5}
+	
+	\subsection*{Formulation euclidienne}
+	Dans la quantification euclidienne, on remplace le temps \(t\) par une coordonnée imaginaire \(\tau = \mathrm{i}\,t\), de sorte que la métrique devient \(\delta_{\mu\nu}\) au lieu de \(\eta_{\mu\nu}\). Les fonctions de corrélation (Green) sont \(\langle \phi(x_1)\cdots \phi(x_n)\rangle\) sous la forme d’une \emph{intégrale de chemin} exponentielle \(\exp(-S_{\mathrm{E}})\).
+	
+	\subsection*{Axiomes OS (1973--75)}
+	Osterwalder et Schrader \cite{OsterwalderSchrader1973,OsterwalderSchrader1975} ont énoncé une liste de conditions (positivité réfléchie, invariance de translation, propriétés analytiques, etc.) qui, si elles sont satisfaites par les corrélations euclidiennes, \textbf{garantissent} la \emph{reconstruction} d’un espace de Hilbert, d’un hamiltonien auto-adjoint et d’opérateurs de champs en temps réel (Wightman). Parmi ces axiomes :
+	\begin{itemize}
+		\item \textbf{Réflexion (reflection positivity)} : pour un plan (souvent \(\tau=0\)), les champs situés en \(\tau<0\) sont reliés à ceux de \(\tau>0\) de façon à assurer la positivité de la norme.
+		\item \textbf{Invariance de translation} et \textbf{rotation} (en 4D euclidien).
+		\item \textbf{Covariance sous permutations} (statistiques bosoniques pour le champ \(\phi\)).
+	\end{itemize}
+	
+	\subsection*{Intérêt pour Yang--Mills}
+	Une fois qu’on a construit la \emph{mesure} sur les champs de jauge satisfaisant ces axiomes, on peut \textbf{revenir à la formulation Minkowski} et étudier le \emph{spectre} de l’hamiltonien. Un \(\Delta>0\) se traduit par la \og masse\fg\ du premier état excité. Nous développerons ces points dans les chapitres \ref{chap:7} et \ref{chap:8}.
+	
+	\vspace{2em}
+	
+	%---------------------------------------------------------------------------------------
+	% Conclusion du Chapitre 3
+	%---------------------------------------------------------------------------------------
+	\noindent
+	\textbf{Conclusion du Chapitre 3 :}\\
+	Nous avons présenté les \textbf{concepts fondamentaux} : groupes de Lie compacts (particulièrement \(\mathrm{SU}(N)\)), formulation des champs de jauge continus \textit{vs.} variables de liaison sur réseau, et rappelé la base des \textbf{axiomes d’Osterwalder--Schrader} permettant la reconstruction d’une \emph{théorie de champ quantique}.  
+	Au chapitre~\ref{chap:4}, nous entrerons dans le \textbf{vif du sujet} avec la \emph{formulation sur réseau (Lattice Gauge Theory)}, qui fournit une \emph{régularisation} concrète et préserve la symétrie de jauge à chaque pas.
+	
+	\vspace{2em}
+	
+	%=======================================================================================
+	% Références Bibliographiques Utilisées dans ce Chapitre (en dur)
+	%=======================================================================================
+	\begin{thebibliography}{99}
+		
+		\bibitem{Knapp2002}
+		A.~W. Knapp,
+		\textit{Lie Groups Beyond an Introduction}, 2nd ed.,
+		Birkhäuser, Boston (2002).
+		\\[-0.75em]
+		
+		\bibitem{Hall2015}
+		B.~C. Hall,
+		\textit{Lie Groups, Lie Algebras, and Representations: An Elementary Introduction}, 2nd ed.,
+		Springer, Cham (2015).
+		\\[-0.75em]
+		
+		\bibitem{Georgi1999}
+		H.~Georgi,
+		\textit{Lie Algebras in Particle Physics}, 2nd ed.,
+		Westview Press, Boulder (1999).
+		\\[-0.75em]
+		
+		\bibitem{ItzyksonDrouffe1989}
+		C.~Itzykson, J.-M. Drouffe,
+		\textit{Statistical Field Theory, Vol. 1 and 2},
+		Cambridge University Press, Cambridge (1989).
+		\\[-0.75em]
+		
+		\bibitem{Nakahara2003}
+		M.~Nakahara,
+		\textit{Geometry, Topology and Physics}, 2nd ed.,
+		CRC Press, Boca Raton (2003).
+		\\[-0.75em]
+		
+		\bibitem{OsterwalderSchrader1973}
+		K.~Osterwalder, R.~Schrader,
+		\textit{Axioms for Euclidean Green's Functions},
+		Comm.~Math.~Phys. \textbf{31}, 83--112 (1973).
+		\\[-0.75em]
+		
+		\bibitem{OsterwalderSchrader1975}
+		K.~Osterwalder, R.~Schrader,
+		\textit{Axioms for Euclidean Green's Functions II},
+		Comm.~Math.~Phys. \textbf{42}, 281--305 (1975).
+		
+	\end{thebibliography}
+	
+	%=======================================================================================
+	% Fin du fichier : chap3.tex
+	%=======================================================================================

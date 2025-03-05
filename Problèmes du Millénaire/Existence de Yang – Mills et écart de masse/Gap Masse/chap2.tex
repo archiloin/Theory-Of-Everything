@@ -1,0 +1,199 @@
+%=======================================================================================
+% Fichier : chap2.tex
+% Chapitre 2 : Historique et Motivations Théoriques
+%=======================================================================================
+\chapter{Historique et Motivations Théoriques}
+\label{chap:2}
+
+%---------------------------------------------------------------------------------------
+% Section 2.1 : Rappels sur la Théorie de Jauge en 4D (naissance de la QCD, rôle de SU(N))
+%---------------------------------------------------------------------------------------
+\section{Rappels sur la Théorie de Jauge en 4D}
+\label{sec:2.1}
+
+\subsection*{De l'électromagnétisme à Yang--Mills}
+Les premières idées de \emph{théorie de jauge} remontent à l'\'electromagnétisme de Maxwell, où la \og phase\fg\ du potentiel vectoriel peut être modifiée localement sans affecter les observables physiques. En 1954, C.\,N.~Yang et R.\,L.~Mills \cite{YangMills1954} généralisent ce concept en introduisant des champs de jauge \textbf{non abéliens}, où la \og phase\fg\ devient un \emph{vecteur} (ou matrice) dans un groupe de Lie compact, tel que \(\mathrm{SU}(N)\).
+
+\begin{itemize}
+	\item \textbf{Invariance locale} : la théorie est invariante sous des transformations de jauge déréglées (dépendant de la position en espace-temps), ce qui impose l'introduction de \emph{connexions de jauge}.
+	\item \textbf{Dérivée covariante} : la dérivation se prolonge en \(\mathrm{D}_\mu = \partial_\mu + i\,g\,A_\mu\), où \(A_\mu\) est un champ de \(\mathfrak{su}(N)\).
+\end{itemize}
+
+\subsection*{La QCD (Chromodynamique Quantique)}
+Dans les années 1970, l'étude des jets hadroniques et la découverte de la \textbf{liberté asymptotique} (cf. \cite{GrossWilczek1973,Politzer1973}) conduisent à formaliser la \(\mathrm{SU}(3)\) \textbf{comme groupe de jauge} de l'interaction forte, appelée \emph{QCD} (Quantum Chromodynamics).  
+\begin{itemize}
+	\item \(\mathrm{SU}(3)\) décrit la charge de \og couleur\fg\ portée par les quarks et les gluons.  
+	\item Le \emph{lagrangien} QCD inclut des champs fermioniques (quarks) couplés au champ de jauge \(A_\mu^a\) (\(a=1,\dots,8\) pour \(\mathrm{SU}(3)\)).
+\end{itemize}
+
+\subsection*{Rôle général de \(\mathrm{SU}(N)\)}
+Pour la \emph{théorie pure de Yang--Mills} (sans quarks), le groupe \(\mathrm{SU}(N)\) généralise simplement \(\mathrm{SU}(3)\). Les propriétés essentielles (non abélianité, confinement) demeurent qualitativement similaires. Le \textbf{cas \(N=3\)} est la QCD pure, pivot expérimental du Modèle Standard. Mais \(\mathrm{SU}(2)\), \(\mathrm{SU}(4)\), etc. présentent des caractéristiques analogues du point de vue mass gap \cite{ItzyksonDrouffe1989}.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 2.2 : Découvertes Expérimentales (Confinement, Glueballs)
+%---------------------------------------------------------------------------------------
+\section{Découvertes Expérimentales : Confinement et Glueballs}
+\label{sec:2.2}
+
+\subsection*{Confinement des quarks}
+Les expériences de \emph{diffusion profonde inélastique} (années 1960-1970) ont révélé que les hadrons (protons, neutrons, mésons, etc.) recèlent des constituants \og ponctuels\fg\ (\textit{partons}), ultérieurement identifiés aux \emph{quarks}. Or, \textbf{nul n'a jamais isolé un quark libre}, même à très haute énergie. On parle de \emph{confinement} :
+\begin{itemize}
+	\item \textbf{Tension de corde} : les \og lignes de champ\fg\ se contractent comme une \og corde\fg\ entre quarks. Étirer cette corde \emph{exige} tant d'énergie qu'on crée de nouvelles paires quark-antiquark, sans libérer un quark isolé.
+	\item \textbf{Mesures indirectes} : l'observation de \og jets\fg\ dans les collisions confirme que les quarks se \og thermalisaient\fg\ rapidement en hadrons confinés.
+\end{itemize}
+
+\subsection*{Glueballs : la fin de la masse nulle}
+En théorie de Yang--Mills pure, les \emph{gluons} sont les seules particules de jauge. Comme ils portent eux-mêmes la charge de couleur, ils peuvent s'attacher mutuellement pour former des \og boules de gluons\fg, ou \emph{glueballs}.  
+\begin{itemize}
+	\item \textbf{Masse mesurée} : en \(\mathrm{SU}(3)\) pure (sans quarks), les simulations sur réseau estiment le \textbf{plus léger} glueball scalaire à environ \(1.6\,\mathrm{GeV}\) \cite{Teper1998}, attestant d’un \emph{gap} conséquent.
+	\item \textbf{Implication physique} : aucun mode \(\mathrm{SU}(3)\) n'apparaît en masse nulle. Cela renforce l'idée d'un \textbf{Mass Gap} pour la QCD pure.
+\end{itemize}
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 2.3 : Travaux Fondateurs : Wilson (1974), Gross--Wilczek & Politzer, Osterwalder--Schrader, etc.
+%---------------------------------------------------------------------------------------
+\section{Travaux Fondateurs}
+\label{sec:2.3}
+
+\subsection*{Wilson et la Formulation sur Réseau (1974)}
+En 1974, K.\,G.~Wilson \cite{Wilson1974} introduit l’idée de \textbf{discrétiser l’espace-temps} et de remplacer le champ de jauge \(A_\mu(x)\) par des \emph{variables de liaison} \(U_\ell \in \mathrm{SU}(N)\) sur chaque arête \(\ell\) du réseau. Cette \og Lattice Gauge Theory\fg:
+\begin{itemize}
+	\item \textbf{Élimine les divergences UV} : le \emph{maillage} agit comme un cutoff naturel \(\sim 1/a\), où \(a\) est le pas du réseau.
+	\item \textbf{Préserve la jauge} : l’intégration se fait via la mesure de Haar sur \(\mathrm{SU}(N)\), assurant l’invariance de jauge \(\mathrm{SU}(N)\).
+	\item \textbf{Anticipe le confinement} : l’action de Wilson (somme sur les \og plaquettes\fg) permet d'observer numériquement l’enfermement des charges de couleur.
+\end{itemize}
+
+\subsection*{Asymptotic Freedom : Gross--Wilczek et Politzer (1973)}
+En parallèle, D.\,Gross et F.\,Wilczek \cite{GrossWilczek1973} ainsi que H.\,Politzer \cite{Politzer1973} démontrent que les théories de jauge \(\mathrm{SU}(N)\) (avec un nombre limité de quarks) possèdent la \emph{liberté asymptotique} : plus l’énergie est élevée, plus le couplage diminue.  
+\begin{itemize}
+	\item \textbf{Conséquence} : la renormalisation en 4D \textit{pourrait} être \og maîtrisée\fg\ car au niveau ultraviolet (\(a\to 0\)), le système est faiblement couplé.
+	\item \textbf{Grand progrès} : la QCD devient une théorie candidate réaliste pour l’interaction forte, compatible avec les expériences à haute énergie.
+\end{itemize}
+
+\subsection*{Axiomatisation : Osterwalder--Schrader (1973--75)}
+K.~Osterwalder et R.~Schrader \cite{OsterwalderSchrader1973,OsterwalderSchrader1975} formalisent la \textbf{théorie des champs euclidiens} via des axiomes (positivité, invariance, symétrie Bose, etc.). Ces axiomes garantissent la \emph{reconstruction} d'une théorie de champs en temps réel (Wightman) si la formulation euclidienne est cohérente.  
+\begin{itemize}
+	\item \textbf{Reflection positivity} : condition cruciale pour que le \og hamiltonien\fg\ associé soit \emph{positif} (spectre en énergies réelles).
+	\item \textbf{Application à Yang--Mills} : assurer que la mesure (que ce soit sur réseau ou en limite continuum) vérifie \emph{toutes} ces propriétés implique l’existence même d’une \textbf{QFT} \(\mathrm{SU}(N)\) 4D.
+\end{itemize}
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section 2.4 : Progrès Récents et Approches Numériques
+%---------------------------------------------------------------------------------------
+\section{Progrès Récents et Approches Numériques}
+\label{sec:2.4}
+
+\subsection*{Simulations Lattice à grande échelle}
+Depuis les années 1980, la puissance de calcul croît de façon exponentielle, permettant des simulations de plus en plus fines. Des collaborations internationales (ex.~\cite{UkqcdRbcCollab}, etc.) ont réalisé des \textbf{calculs en 4D} de haute précision, confirmant le \emph{mass gap} et la structure du spectre gluonique (glueballs, etc.).  
+
+\subsection*{Méthodes constructives multi-échelles}
+En parallèle, des travaux comme ceux de T.~Balaban \cite{Balaban1982-1,Balaban1982-2} ou V.~Rivasseau \cite{Rivasseau1991}, prolongés par divers auteurs, ont développé une \textbf{approche rigoureuse} du \og groupe de renormalisation\fg. Ces méthodes consistent à :
+\begin{itemize}
+	\item \textbf{Découper en échelles d’énergie} (ou de moment) et contrôler à chaque étape l’intégrale de chemin.  
+	\item \textbf{Renormaliser bloc par bloc}, en prouvant que les divergences UV se compensent et que la limite finale reste \emph{finie} et invariante de jauge.
+\end{itemize}
+Ce programme est partiellement abouti : bien que complexe, il a largement montré la faisabilité d’une \textit{construction mathématique} de la QFT de Yang--Mills, ouvrant la voie à la preuve \emph{non-perturbative} du mass gap.
+
+\subsection*{Synthèse : un puzzle presque complet}
+Aujourd’hui, la communauté dispose d’\textbf{éléments forts} (simulation, théorèmes constructifs, axiomes OS, etc.) soutenant la validité de la QCD et l’existence d’un mass gap. Toutefois, \textbf{l’assemblage exhaustif} de tous ces morceaux dans un seul document (et la clôture complète de la preuve) reste un objectif ambitieux. Le présent manuscrit entend contribuer à cet effort en explicitant chaque maillon de la chaîne logique.
+
+\vspace{2em}
+
+%---------------------------------------------------------------------------------------
+% Conclusion du Chapitre 2
+%---------------------------------------------------------------------------------------
+\noindent
+\textbf{Conclusion du Chapitre 2 :}\\
+Nous avons parcouru l'évolution historique de la théorie de Yang--Mills, depuis les premières idées d'invariance de jauge jusqu'aux simulations numériques récentes. Les \emph{fondements} (rôle de \(\mathrm{SU}(N)\), confinement, asymptotic freedom) et les \emph{outils} (formulation lattice, axiomes Osterwalder--Schrader, méthodes constructives) sont ainsi en place.  
+Dans le chapitre~\ref{chap:3}, nous poserons les \textbf{notations essentielles} (espaces de connexions, transformations de jauge, variables de réseau, etc.) et rappellerons quelques préliminaires mathématiques nécessaires à la suite de la démonstration.
+
+\vspace{2em}
+
+%=======================================================================================
+% Références Bibliographiques Utilisées dans ce Chapitre (en dur)
+%=======================================================================================
+\begin{thebibliography}{99}
+	
+	\bibitem{YangMills1954}
+	C.~N. Yang, R.~L. Mills,
+	\textit{Conservation of Isotopic Spin and Isotopic Gauge Invariance},
+	Phys.~Rev. \textbf{96}, 191--195 (1954).
+	\\[-0.75em]
+	
+	\bibitem{GrossWilczek1973}
+	D.~J. Gross, F.~Wilczek,
+	\textit{Ultraviolet Behavior of Non-Abelian Gauge Theories},
+	Phys.~Rev.~Lett. \textbf{30}, 1343--1346 (1973).
+	\\[-0.75em]
+	
+	\bibitem{Politzer1973}
+	H.~D. Politzer,
+	\textit{Reliable Perturbative Results for Strong Interactions?},
+	Phys.~Rev.~Lett. \textbf{30}, 1346--1349 (1973).
+	\\[-0.75em]
+	
+	\bibitem{ItzyksonDrouffe1989}
+	C.~Itzykson, J.-M. Drouffe,
+	\textit{Statistical Field Theory, Vol. 1 and 2},
+	Cambridge University Press, Cambridge (1989).
+	\\[-0.75em]
+	
+	\bibitem{Teper1998}
+	M.~Teper,
+	\textit{Glueball Masses and Other Physical Properties of SU(N) Gauge Theories in D=3+1: A Review of Lattice Results for Theorists},
+	arXiv:hep-th/9812187 (1998).
+	\\[-0.75em]
+	
+	\bibitem{Wilson1974}
+	K.~G. Wilson,
+	\textit{Confinement of Quarks},
+	Phys.~Rev.~D \textbf{10}, 2445--2459 (1974).
+	\\[-0.75em]
+	
+	\bibitem{OsterwalderSchrader1973}
+	K.~Osterwalder, R.~Schrader,
+	\textit{Axioms for Euclidean Green's Functions},
+	Comm.~Math.~Phys. \textbf{31}, 83--112 (1973).
+	\\[-0.75em]
+	
+	\bibitem{OsterwalderSchrader1975}
+	K.~Osterwalder, R.~Schrader,
+	\textit{Axioms for Euclidean Green's Functions II},
+	Comm.~Math.~Phys. \textbf{42}, 281--305 (1975).
+	\\[-0.75em]
+	
+	\bibitem{Balaban1982-1}
+	T.~Balaban,
+	\textit{Renormalization Group Approach to Lattice Gauge Field Theories (I)},
+	Commun.~Math.~Phys. \textbf{79}, 277--321 (1981).
+	\\[-0.75em]
+	
+	\bibitem{Balaban1982-2}
+	T.~Balaban,
+	\textit{Renormalization Group Approach to Lattice Gauge Field Theories (II)},
+	Commun.~Math.~Phys. \textbf{83}, 363--376 (1982).
+	\\[-0.75em]
+	
+	\bibitem{Rivasseau1991}
+	V.~Rivasseau,
+	\textit{From Perturbative to Constructive Renormalization},
+	Princeton University Press, Princeton (1991).
+	\\[-0.75em]
+	
+	\bibitem{UkqcdRbcCollab}
+	C.~Allton \textit{et al.} (RBC-UKQCD Collaboration),
+	\textit{Physical Results from 2+1 Flavor Domain Wall QCD and SU(2) Chiral Perturbation Theory},
+	Phys.~Rev.~D \textbf{78}, 114509 (2008).
+	\\[-0.75em]
+	
+\end{thebibliography}
+
+%=======================================================================================
+% Fin du fichier : chap2.tex
+%=======================================================================================

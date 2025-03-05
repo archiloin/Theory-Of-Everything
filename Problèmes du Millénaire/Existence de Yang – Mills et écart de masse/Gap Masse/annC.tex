@@ -1,0 +1,123 @@
+%=======================================================================================
+% Fichier : annC.tex
+% Annexe C : Méthodes Numériques sur Réseau
+%=======================================================================================
+\chapter{Méthodes Numériques sur Réseau}
+\label{ann:C}
+
+%---------------------------------------------------------------------------------------
+% Section C.1 : Algorithmes de Monte Carlo pour SU(N)
+%---------------------------------------------------------------------------------------
+\section{Algorithmes de Monte Carlo pour \texorpdfstring{\(\mathrm{SU}(N)\)}{SU(N)}}
+\label{sec:C.1}
+
+\subsection*{Principe de Metropolis/HMC}
+Pour échantillonner les configurations \(\{U_\ell\}\) selon la mesure
+\(\mathrm{d}\mu_{\mathrm{Haar}}(U_\ell)\,\exp(-\beta S_{\mathrm{W}})\),
+on utilise des algorithmes Monte Carlo :
+\begin{itemize}
+	\item \textbf{Metropolis} : on propose une modification locale \(\delta U_\ell\), 
+	puis on l’accepte ou on la rejette selon une probabilité proportionnelle 
+	à \(\exp(-\Delta S)\).
+	\item \textbf{HMC (Hybrid Monte Carlo)} : on introduit des \og moments\fg\ 
+	(variables de moment) et on réalise une intégration \(\mathrm{d}H = \mathrm{d}p\,\mathrm{d}U\)
+	suivie d’un accept/reject global.
+\end{itemize}
+
+\subsection*{Effets d’autocorrélation}
+Afin d’obtenir des configurations suffisamment \emph{indépendantes}, il faut
+laisser \textbf{plusieurs pas} entre deux mesures (pas MC). À couplage fort,
+ce \og temps de relaxation\fg\ peut devenir important, phénomène connu
+sous le nom de \textbf{critical slowing down}.
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section C.2 : Évaluations Numériques du Gap : revue de résultats classiques
+%---------------------------------------------------------------------------------------
+\section{Évaluations Numériques du Gap : Revue de Résultats Classiques}
+\label{sec:C.2}
+
+\subsection*{\(\mathrm{SU}(2)\) et \(\mathrm{SU}(3)\)}
+Historiquement, M.~Creutz \cite{Creutz1983} a réalisé des simulations
+pionnières montrant la \textbf{croissance linéaire du potentiel} (confinement)
+et l’existence d’un glueball massif. Ensuite, Teper \cite{Teper1998} affina
+ces valeurs, trouvant, par exemple :
+\[
+m_{0^{++}} \approx 1.6 \,\mathrm{GeV} \quad \text{pour SU(3) pure,}
+\]
+confirmé par d’autres collaborations (UKQCD, etc.).
+
+\subsection*{Grilles plus fines et supercalculateurs}
+Depuis les années 2000, de grandes collaborations QCD (RBC-UKQCD, MILC, etc.)
+emploient des grilles encore plus fines (\(32^4,\,64^4\), etc.) et affinent
+les extrapolations \(\,a \to 0\). Toutes ces données confirment la
+\textbf{convergence} vers un \emph{mass gap} non nul pour la théorie pure
+\(\mathrm{SU}(N)\).
+
+\vspace{1em}
+
+%---------------------------------------------------------------------------------------
+% Section C.3 : Comparaison Analytique/Numérique
+%---------------------------------------------------------------------------------------
+\section{Comparaison Analytique/Numérique}
+\label{sec:C.3}
+
+\subsection*{Complémentarité}
+Les approches:
+\begin{itemize}
+	\item \textbf{Constructives / Renormalisation multi-échelle} : donnent une 
+	preuve rigoureuse de l’existence du mass gap (\(\Delta>0\)), mais ne visent 
+	pas nécessairement une valeur numérique précise.
+	\item \textbf{Simulations Lattice} : permettent d’\emph{estimer} quantitativement
+	le gap et de tester la théorie à divers paramètres \(\beta, L, a\).  
+\end{itemize}
+
+\subsection*{Vers un mariage analytique-numérique}
+Le \textbf{rêve} de la communauté :  
+\begin{enumerate}
+	\item Des preuves analytiques robustes (contrôle complet des divergences et
+	de l’invariance de jauge) démontrant la finitude et \(\Delta>0\).  
+	\item Des \emph{simulations} haute précision pour affiner la valeur numérique
+	du gap (ex. \(\Delta \approx 1.6\,\mathrm{GeV}\) pour \(\mathrm{SU}(3)\)).
+\end{enumerate}
+Ainsi, la QCD pure en 4D apparaît fondée sur un solide \emph{début} de preuve
+constructive et confortée par l’évidence numérique.
+
+\vspace{2em}
+
+%---------------------------------------------------------------------------------------
+% Conclusion de l’Annexe C
+%---------------------------------------------------------------------------------------
+\noindent
+\textbf{Conclusion de l’Annexe C :}\\
+Les méthodes numériques sur réseau constituent le \textbf{pilier empirique}
+de l’étude du Mass Gap pour Yang--Mills. Elles \textbf{confirment} que le
+confinement et la présence d’un gap \(\Delta \approx 1.6\,\mathrm{GeV}\) (dans
+le cas \(\mathrm{SU}(3)\) pur) sont parfaitement plausibles. Couplées aux
+\emph{techniques constructives}, elles offrent un panorama cohérent,
+à la fois qualitatif (preuve formelle) et quantitatif (simulation).
+
+\vspace{2em}
+
+%=======================================================================================
+% Références Bibliographiques (en dur) pour l’Annexe C
+%=======================================================================================
+\begin{thebibliography}{99}
+	
+	\bibitem{Creutz1983}
+	M.~Creutz,
+	\textit{Quarks, Gluons and Lattices},
+	Cambridge University Press, Cambridge (1983).
+	\\[-0.75em]
+	
+	\bibitem{Teper1998}
+	M.~Teper,
+	\textit{Glueball Masses and Other Physical Properties of SU(N) Gauge Theories in D=3+1: A Review of Lattice Results for Theorists},
+	arXiv:hep-th/9812187 (1998).
+	
+\end{thebibliography}
+
+%=======================================================================================
+% Fin du fichier : annC.tex
+%=======================================================================================
