@@ -1,0 +1,13 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction : Principe de moindre action et alphabet grec}{2}{section.1}%
+\contentsline {section}{\numberline {2}Éléments fondamentaux de la théorie du tout}{2}{section.2}%
+\contentsline {section}{\numberline {3}Les 24 lettres grecques comme ``atlas notationnel''}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Bloc (A) : Géométrie et gravité}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Bloc (B) : Interactions de jauge}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Bloc (C) : Matière (ordinaire et exotique)}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Bloc (D) : Paramètres et constantes}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Bloc (E) : Phénomènes et extensions}{3}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Équation-synthèse : un exemple schématique}{3}{section.4}%
+\contentsline {section}{\numberline {5}Énoncé final du “Théorème du Tout”}{4}{section.5}%
+\contentsline {paragraph}{Version littéraire.}{4}{section*.2}%
+\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}%

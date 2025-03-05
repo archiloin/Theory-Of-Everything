@@ -1,0 +1,30 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Termes de l'Action : Analyse d\'etaill\'ee}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}(1) La mesure d’int\'egration : \(\displaystyle \DOTSI \intop \ilimits@ d^4 x \,\sqrt {-g}\)}{2}{subsection.2.1}%
+\contentsline {paragraph}{R\^ole global :}{2}{section*.2}%
+\contentsline {subsection}{\numberline {2.2}(2) \(\displaystyle \frac {1}{2\,\kappa ^2}\,R(g)\) : le terme gravitationnel}{2}{subsection.2.2}%
+\contentsline {paragraph}{R\^ole global :}{2}{section*.3}%
+\contentsline {subsection}{\numberline {2.3}(3) \(\displaystyle -\Lambda \) : la constante cosmologique}{2}{subsection.2.3}%
+\contentsline {paragraph}{R\^ole global :}{2}{section*.4}%
+\contentsline {subsection}{\numberline {2.4}(4) \(\displaystyle -\tfrac {1}{4}\,F_{\mu \nu }^A\,F^{\mu \nu A}\) : champ de jauge}{2}{subsection.2.4}%
+\contentsline {paragraph}{R\^ole global :}{2}{section*.5}%
+\contentsline {subsection}{\numberline {2.5}(5) \(\displaystyle \overline {\Psi }\,\bigl (i\,\gamma ^\mu D_\mu \bigr )\,\Psi \) : la mati\`ere (fermions)}{2}{subsection.2.5}%
+\contentsline {paragraph}{R\^ole global :}{3}{section*.6}%
+\contentsline {subsection}{\numberline {2.6}(6) \(\displaystyle |D_\mu \Phi |^2\) : terme cin\'etique du champ scalaire (Higgs)}{3}{subsection.2.6}%
+\contentsline {paragraph}{R\^ole global :}{3}{section*.7}%
+\contentsline {subsection}{\numberline {2.7}(7) \(\displaystyle -\,V(\Phi )\) : potentiel du scalaire (brisure de sym\'etrie)}{3}{subsection.2.7}%
+\contentsline {paragraph}{R\^ole global :}{3}{section*.8}%
+\contentsline {subsection}{\numberline {2.8}(8) \(\displaystyle \Delta _{\text {Yukawa}}\) : couplages fermions--Higgs}{3}{subsection.2.8}%
+\contentsline {paragraph}{R\^ole global :}{3}{section*.9}%
+\contentsline {subsection}{\numberline {2.9}(9) \(\displaystyle \cdots \) et \(\displaystyle S_{\text {corrections}}\)}{3}{subsection.2.9}%
+\contentsline {paragraph}{R\^ole global :}{3}{section*.10}%
+\contentsline {section}{\numberline {3}Variation de l'Action : \(\,\delta U = 0\)}{3}{section.3}%
+\contentsline {section}{\numberline {4}Du Stade Unifi\'e \`a la D\'esunification :}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}(11.1) \`A haute \'energie}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}(11.2) Refroidissement cosmique}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}(11.3) \'Etat actuel}{4}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Conclusion~: Pourquoi cette action illustre \@FB@og Nous ne sommes qu'un\@FB@fg \relax }{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Unity \`a haute \'energie}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Diff\'erenciation \`a basse \'energie}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}\'Evolution cosmique unifiante}{4}{subsection.5.3}%

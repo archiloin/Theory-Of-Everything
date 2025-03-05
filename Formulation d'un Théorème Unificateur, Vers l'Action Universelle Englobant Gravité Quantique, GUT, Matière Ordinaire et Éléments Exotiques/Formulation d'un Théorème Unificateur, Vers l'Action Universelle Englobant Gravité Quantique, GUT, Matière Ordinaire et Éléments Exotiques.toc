@@ -1,0 +1,30 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Énoncé global du Théorème Unificateur}{1}{section.1}%
+\contentsline {paragraph}{Théorème (version hypothétique).}{1}{section*.2}%
+\contentsline {section}{\numberline {2}Forme générale de l'action \(\,\mathcal {S}_{\text {Univers}}\)}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}(1) Secteur gravitation quantique : \(\mathcal {L}_{\text {grav}}(\mathcal {G},\Phi _{\text {grav}})\)}{2}{subsection.2.1}%
+\contentsline {paragraph}{Terme Einstein-Hilbert \((D\)D\textbf {)}.}{2}{section*.3}%
+\contentsline {paragraph}{Termes d'ordre supérieur et invariants topologiques.}{2}{section*.4}%
+\contentsline {paragraph}{Champs scalaires gravitationnels.}{2}{section*.5}%
+\contentsline {subsection}{\numberline {2.2}(2) Secteur des forces et de la matière : \(\mathcal {L}_{\text {jauge}}(\mathcal {A},\Psi ,\Phi )\)}{2}{subsection.2.2}%
+\contentsline {paragraph}{Champs de jauge \(\mathcal {A}_M^A\).}{2}{section*.6}%
+\contentsline {paragraph}{Fermions \(\Psi \).}{3}{section*.7}%
+\contentsline {paragraph}{Champs scalaires \(\Phi \) (brisure de symétrie).}{3}{section*.8}%
+\contentsline {subsection}{\numberline {2.3}(3) Termes cosmologiques : \(\mathcal {L}_{\text {cosmo}}\)}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}(4) Secteur au-delà du Modèle Standard : \(\mathcal {L}_{\text {BSM}}\)}{3}{subsection.2.4}%
+\contentsline {paragraph}{Matière noire, secteurs cachés.}{3}{section*.9}%
+\contentsline {paragraph}{Superpartenaires (SUSY).}{3}{section*.10}%
+\contentsline {paragraph}{Transitions baryon-lépton (GUT).}{3}{section*.11}%
+\contentsline {subsection}{\numberline {2.5}(5) Corrections et invariants topologiques : \(\mathcal {L}_{\text {corr}}\)}{3}{subsection.2.5}%
+\contentsline {paragraph}{Termes topologiques.}{3}{section*.12}%
+\contentsline {paragraph}{Anomalies et Green–Schwarz.}{3}{section*.13}%
+\contentsline {paragraph}{Termes de boucles.}{3}{section*.14}%
+\contentsline {subsection}{\numberline {2.6}Action de compactification : \(\mathcal {S}_{\text {compac}}\)}{4}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Variation de l'action et obtention des équations de mouvement}{4}{section.3}%
+\contentsline {section}{\numberline {4}Complétude du Théorème et résolution de tout problème scientifique}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Structure multi-échelle}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Théories effectives successives}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Couplage aux sciences supérieures (chimie, biologie, etc.)}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Description pas à pas de chaque calcul}{5}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion et perspectives}{5}{section.6}%
+\contentsline {paragraph}{Remarques finales.}{5}{section*.15}%
