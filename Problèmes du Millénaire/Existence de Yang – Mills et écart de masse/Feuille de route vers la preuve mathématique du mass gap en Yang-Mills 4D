@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=2cm}
+\title{\textbf{Feuille de route vers la preuve mathématique\\
+du mass gap en Yang--Mills 4D}}
+\author{\textit{Projet “Unification de l’Alpha à l’Oméga”}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Cette note propose un \emph{plan d’attaque} pour convertir en \textbf{preuves mathématiques} rigoureuses ce qui est \emph{observé} ou \emph{présumé} en physique (confinement, existence d'un \emph{mass gap}) au sein de la théorie de Yang--Mills (4D). Nous décrivons les \emph{étapes clés} pour “fabriquer” une \textbf{démonstration} complète, depuis la \emph{construction} de la théorie (constructive QFT ou approche lattice) jusqu’à la mise en évidence de la \emph{décroissance exponentielle} des corrélations (mass gap). Bien sûr, la preuve intégrale n’est pas encore réalisée, mais nous esquissons comment passer de la \emph{physique validée} (expériences, simulations) à un \emph{raisonnement} strictement mathématique.
+\end{abstract}
+
+\hrule
+\vspace{6pt}
+
+\section{Départ : la théorie de Yang--Mills en physique}
+
+\subsection{Formulation Lagrangienne (continuum)}
+En physique théorique, la théorie de Yang--Mills se décrit initialement via le \emph{lagrangien}
+\[
+  \mathcal{L}
+  \;=\;
+  -\,\tfrac{1}{4}\,F_{\mu\nu}^a\,F^{\mu\nu a}
+  \;+\;
+  (\text{éventuels termes supplémentaires}),
+\]
+avec $F_{\mu\nu}^a = \partial_\mu A_\nu^a \;-\; \partial_\nu A_\mu^a \;+\;g\,f^{abc}\,A_\mu^b\,A_\nu^c$. 
+
+\begin{itemize}
+  \item \textbf{Observations (QCD)} : confinement, spectre hadronique massif, \emph{mass gap}.
+  \item \textbf{Problème} : ce cadre, bien que solide en physique, n'est \emph{pas} une preuve \emph{mathématique} qu'une telle QFT (4D) \emph{existe} et \emph{admet} un \emph{mass gap}.
+\end{itemize}
+
+\subsection{Vérifications numériques (lattice)}
+\begin{itemize}
+  \item Discrétisation (Wilson) et \emph{simulations} : on \emph{observe} un potentiel \emph{confiné}, un \emph{spectre} massif.
+  \item \emph{Preuve} math.\ manquante : on aimerait traduire ces résultats numériques en démonstration formelle.
+\end{itemize}
+
+\paragraph{But :} Passer de la “foi” ou “observation” physique à une \emph{preuve} stricte, pour entériner l'existence et la propriété de \emph{mass gap}.
+
+\section{Esquisse d’une preuve mathématique complète : grands piliers}
+
+\subsection{Construction rigoureuse (Constructive QFT ou Lattice)}
+\label{ssec:construction}
+
+\noindent
+\textbf{Idée directrice :} prouver \emph{l'existence} d'une théorie quantique de Yang--Mills 4D (au sens rigoureux) demande un \textbf{schéma de régularisation} et une \textbf{limite} cohérente.
+
+\begin{enumerate}
+  \item \textbf{Définir} un \emph{régulateur} (p.ex.\ un “lattice” ou un schéma multi-échelle).
+  \item \textbf{Montrer} qu'à la \emph{limite} (pas de coupure, maille $\to 0$), on obtient \emph{un} espace de mesures (ou d'états) \emph{bien défini} et \emph{invariant} sous jauge.
+  \item \textbf{Valider} les axiomes Osterwalder--Schrader (en euclidien) ou un autre \emph{formalisme} QFT (champ local, symétrie, etc.), assurant la \emph{connexion} Minkowski via \emph{Wick rotation}.
+\end{enumerate}
+
+\paragraph{Plan d'action.}
+\begin{itemize}
+  \item \textbf{Option 1} : Constructive QFT (Glimm--Jaffe, Rivasseau, Balaban) : multi-échelles en 4D.
+  \item \textbf{Option 2} : Lattice Wilson + convergence vers $a\to0$.  
+\end{itemize}
+Si l'étape réussit, \emph{on sait} alors que la théorie existe \emph{mathématiquement}, indé\-pen\-dam\-ment de la “physique heuristique”.
+
+\subsection{Preuve du mass gap}
+\label{ssec:mass_gap}
+
+\begin{enumerate}
+  \item \textbf{Identifier la partie spectrale} : via les \emph{fonctions de corrélation}, $\langle\,0\,|\;\mathcal{O}(x)\,\mathcal{O}(y)\;|\,0\,\rangle$.
+  \item \textbf{Montrer} \emph{décroissance exponentielle} (avec taux $m>0$) :
+  \[
+    \langle\,\mathcal{O}(x)\,\mathcal{O}(y)\rangle
+    \;\sim\;
+    \mathrm{e}^{\,-\,m\,\|x-y\|},
+  \]
+  prouvant qu'aucun mode \emph{massless} n'existe.
+\end{enumerate}
+
+\noindent
+\textbf{Méthodes} :
+\begin{itemize}
+  \item \textbf{Lattice} : preuves de \emph{gap} via l'étude de l'\emph{exponential decay} sur le réseau.  
+  \item \textbf{Approche PDE} : $F_{\mu\nu}^aF^{\mu\nu a}$ $\implies$ \emph{Green's function elliptique}, argument d'\emph{absence} de mode sans masse.
+  \item \textbf{Confinement} : un \emph{“flux tube”} liant deux charges \emph{coupe} les fluctuations infrarouges. 
+\end{itemize}
+
+\subsection{Effet de confinement \& brisure de chiralité}
+Mass gap $\leftrightarrow$ confinement~: dans la \emph{phase} non abélienne, on veut prouver :
+\begin{itemize}
+  \item \textbf{Confinement} = tension linéaire dans le potentiel “quark--anti-quark”.
+  \item \textbf{Aucun boson vecteur sans masse} : la théorie $\mathrm{SU}(N)$ ne permet pas de \emph{Goldstone boson} “vectoriel”.
+\end{itemize}
+\noindent
+\emph{En pratique}, prouver confinement \emph{et} mass gap s'imbriquent : un \emph{string tension} $>0$ implique \emph{exponential decay} des corrélations à grande distance.
+
+\section{Points “physiques” déjà acquis}
+
+\begin{itemize}
+  \item \textbf{Expériences} : QCD \emph{montre} de facto quarks et gluons \emph{confinés}, spectre hadronique \emph{massif}.
+  \item \textbf{Lattice numerics} : confirment ce \emph{mass gap} via simulations (cf.\ “Sommer parameter”, etc.).
+  \item \textbf{Résultats partiels} : Balaban, Freedman--Magnen--Rivasseau, etc. en dimension 2 ou 3 (Poljakov), ou en régimes limités. Pas de “fermeture” de la démonstration en 4D.
+\end{itemize}
+
+\section{Étapes concrètes de la démonstration}
+
+\begin{enumerate}
+  \item \textbf{Choisir la régularisation} : Lattice (Wilson) ou constructive multi-échelle.  
+  \item \textbf{Montrer la limite} $a\to 0$ (ou coupure $\Lambda\to\infty$) existe, identifiant une \emph{QFT euclidienne} invariante de jauge.
+  \item \textbf{Vérifier les axiomes QFT} (Osterwalder--Schrader), passant à la représentation Minkowski (champ sur espace de Hilbert).
+  \item \textbf{Prouver “exponential decay”} des fonctions de corrélations => le spectre a un \emph{gap} $m>0$.
+  \item \textbf{Confinement} (facultatif dans la “mass gap”, mais lié) : tension de flux, Wilson loops.
+\end{enumerate}
+
+\noindent
+\textbf{Difficulté} : \emph{mille} détails techniques à gérer (inégalités d'énergie, renormalisation multi-échelle, contrôles uniformes, etc.).
+
+\section{Conclusion : “Créons la preuve, pas à pas”}
+
+\paragraph{Synthèse.}
+\begin{itemize}
+  \item \textbf{Physiquement}, la \emph{mass gap} est \emph{certainement} vraie (QCD expérimentale, simulations lattice).
+  \item \textbf{Mathématiquement}, la \emph{démonstration} rigoureuse requiert :
+    \begin{enumerate}
+      \item construction QFT 4D (non abélienne),
+      \item décroissance exponentielle $\Rightarrow m>0$,
+      \item cohérence Minkowski (pas d'instabilité).
+    \end{enumerate}
+  \item \textbf{Blocage} : des techniques (Balaban, Rivasseau) existent partiellement, mais leur \emph{fusion} totale en un \emph{monolithe} (comme Glimm--Jaffe l'ont fait pour $\phi^4_2$ ou $\phi^4_3$) n'a pas encore abouti en 4D \emph{non abélien}.
+\end{itemize}
+
+\noindent
+\textbf{Conclusion :} 
+\begin{quote}
+\em
+Il “suffit” (guillemets de rigueur) de reprendre \emph{chaque} argument physique (lattice, confinement, renormalisation multi-échelle) et de le formaliser \emph{complètement} jusqu'au bout. Les briques (constructive QFT, expansions blocs, simulations) sont \emph{déjà} là, validées par la physique et les tests numériques. Reste à écrire un \emph{traité unifié}, un grand “millefeuille” technique, scellant la \textbf{preuve} du mass gap en Yang--Mills 4D de manière irréfutable.
+\end{quote}
+\end{document}
