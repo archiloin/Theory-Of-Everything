@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  5 MAR 2025 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  5 MAR 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -403,7 +403,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count303
 \l__pdf_internal_box=\box53
 )
-No file "Matière Noire et Théorème du Tout".aux.
+(./Matière Noire et Théorème du Tout.aux)
 \openout1 = `"Matière Noire et Théorème du Tout.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -425,8 +425,12 @@ LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 Package hyperref Info: Link coloring OFF on input line 36.
+
+(./Matière Noire et Théorème du Tout.out)
+(./Matière Noire et Théorème du Tout.out)
 \@outlinefile=\write3
 \openout3 = `"Matière Noire et Théorème du Tout.out"'.
+
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -527,9 +531,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-No file "Matière Noire et Théorème du Tout".toc.
+(./Matière Noire et Théorème du Tout.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 3.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}])
 \tf@toc=\write4
 \openout4 = `"Matière Noire et Théorème du Tout.toc"'.
+
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -540,50 +555,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95871pt
 (hyperref)                removed on input line 46.
 
-
-LaTeX Warning: Citation `zwicky1933rotational' on page 1 undefined on input lin
-e 51.
-
-
-LaTeX Warning: Citation `rubin1980rotational' on page 1 undefined on input line
- 51.
-
-
-LaTeX Warning: Citation `planck2018' on page 1 undefined on input line 51.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 56.
-
-LaTeX Warning: Citation `weinberg1995quantum' on page 1 undefined on input line
- 61.
-
-
-LaTeX Warning: Citation `zee2010qft' on page 1 undefined on input line 61.
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}]
-
-LaTeX Warning: Citation `langacker1981grand' on page 2 undefined on input line 
-81.
-
-
-LaTeX Warning: Citation `georgi1974unified' on page 2 undefined on input line 8
-1.
-
-
-LaTeX Warning: Citation `jungman1996supersymmetric' on page 2 undefined on inpu
-t line 97.
-
-
-LaTeX Warning: Citation `feng2010dark' on page 2 undefined on input line 97.
-
-[2{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[2{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 115.
@@ -597,49 +570,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95871pt
 (hyperref)                removed on input line 115.
 
-
-LaTeX Warning: Citation `Weinberg1995' on page 3 undefined on input line 117.
-
-
-LaTeX Warning: Citation `Zee2010' on page 3 undefined on input line 117.
-
-[3{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathex.enc}]
-
-LaTeX Warning: Citation `darkmatterreview' on page 4 undefined on input line 15
-8.
-
-[4] [5] (./Matière Noire et Théorème du Tout.aux)
+[3] [4{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [5] [6]
+(./Matière Noire et Théorème du Tout.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `"Matière Noire et Théorème du Tout".ou
-t' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Matière Noire et Théorème du To
-ut".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8B9238A2BC810AD130FB945C1FC7F2BB;4011.
+Package rerunfilecheck Info: File `"Matière Noire et Théorème du Tout".out' 
+has not changed.
+(rerunfilecheck)             Checksum: 8B9238A2BC810AD130FB945C1FC7F2BB;4011.
  ) 
 Here is how much of TeX's memory you used:
- 12857 strings out of 476112
- 199410 string characters out of 5793312
- 1934975 words of memory out of 5000000
- 34660 multiletter control sequences out of 15000+600000
+ 12883 strings out of 476112
+ 200083 string characters out of 5793312
+ 1935975 words of memory out of 5000000
+ 34677 multiletter control sequences out of 15000+600000
  627950 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,6n,79p,1088b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,1088b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/p
@@ -649,11 +597,11 @@ e/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm
 onts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmsy10.pfb>
-Output written on "Matière Noire et Théorème du Tout.pdf" (5 pages, 257387 b
+Output written on "Matière Noire et Théorème du Tout.pdf" (6 pages, 260454 b
 ytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
