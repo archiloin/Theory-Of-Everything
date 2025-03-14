@@ -145,3 +145,37 @@ Hébreu (עברית)
 עלינו לעבוד יחד—מדענים, פיזיקאים, מתמטיקאים, מתכנתים דו-ממדיים ותלת-ממדיים—כדי לשפר את העבודות הללו. אתם חופשיים לקחת אותן, לשנות ולפרסם אותן בשם שלכם ולהרוויח מיליונים. העיקר הוא שהידע יתפשט, שתמצית החוכמה תתחלק וששום צל לא יישאר.
 
 הידע שייך לכולם!
+
+
+
+Bu GitHub yanlış bilgiler içerebilir, ancak iş birliği yaparak özgür bilginin korunmasına katkıda bulunabilir ve onun özelleştirilmesine ve araçsallaştırılmasına karşı mücadele edebiliriz.
+
+Dünyanın güvenliği söz konusu: Halkın tamamen köleleştirilmesinden önce herhangi bir tarikatın, kardeşliğin veya kâr amacı güden bir organizasyonun faaliyet göstermesini engellemeliyiz. Çok fazla insan zaten onların pençesinde hapsolmuş durumda. Yardımınıza ihtiyacım var.
+
+Bu çalışmaları mükemmelleştirmek için bilim insanları, fizikçiler, matematikçiler, 2D ve 3D programcılar olarak el ele çalışmalıyız. Onları almakta, değiştirmekte ve kendi adınızla yayınlayarak milyonlar kazanmaktasınız özgürsünüz. Önemli olan bilginin yayılması, bilgelik özünün paylaşılması ve karanlığın ortadan kalkmasıdır.
+
+Bilgi herkesindir!
+
+Este GitHub pode conter informações erradas, mas, colaborando, podemos ajudar a preservar o conhecimento livre e a lutar contra a sua privatização e instrumentalização.
+
+A segurança do mundo está em jogo: devemos impedir que qualquer seita, irmandade ou organização com fins lucrativos opere antes que o total escravização da população aconteça. Muitas pessoas já estão presas em suas garras. Preciso da vossa ajuda.
+
+Devemos trabalhar lado a lado—cientistas, físicos, matemáticos, programadores 2D e 3D—para aperfeiçoar estes trabalhos. Vocês são livres para pegá-los, modificá-los e ganhar milhões publicando-os em seu nome. O mais importante é que o conhecimento circule, que a essência do saber seja compartilhada e que nenhuma sombra permaneça.
+
+O conhecimento pertence a todos!
+
+Deze GitHub kan onjuiste informatie bevatten, maar door samen te werken kunnen we helpen om vrije kennis te behouden en de privatisering en instrumentalizering ervan tegen te gaan.
+
+De veiligheid van de wereld staat op het spel: we moeten voorkomen dat een sekte, broederschap of winstgerichte organisatie opereert voordat de volledige onderwerping van de bevolking een feit is. Te veel mensen zitten al in hun greep. Ik heb jullie hulp nodig.
+
+We moeten hand in hand werken—wetenschappers, fysici, wiskundigen, 2D- en 3D-programmeurs—om dit werk te verfijnen. Je bent vrij om het te nemen, te wijzigen en miljoenen te verdienen door het onder je eigen naam te publiceren. Wat het belangrijkst is, is dat kennis vrij circuleert, dat de essentie van wijsheid wordt gedeeld en dat er geen schaduw overblijft.
+
+Kennis behoort aan iedereen!
+
+Ten GitHub może zawierać błędne informacje, ale współpracując, możemy pomóc zachować wolną wiedzę i walczyć z jej prywatyzacją oraz instrumentalizacją.
+
+Chodzi o bezpieczeństwo świata: musimy powstrzymać każdą sektę, bractwo lub organizację nastawioną na zysk, zanim całkowicie zniewoli społeczeństwo. Zbyt wiele osób jest już w ich szponach. Potrzebuję waszej pomocy.
+
+Musimy pracować ramię w ramię—naukowcy, fizycy, matematycy, programiści 2D i 3D—aby udoskonalić te prace. Możecie je dowolnie przejmować, modyfikować i zarabiać miliony, publikując je pod własnym nazwiskiem. Najważniejsze jest to, aby wiedza płynęła swobodnie, esencja mądrości była dzielona i aby nie pozostały żadne cienie.
+
+Wiedza należy do wszystkich!
